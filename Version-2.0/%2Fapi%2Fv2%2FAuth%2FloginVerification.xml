@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/api/v2/Auth/loginVerification" path="/api/v2/Auth/loginVerification" id="e6300123-dff7-4c95-8f11-e2fe24513448" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="e6300123-dff7-4c95-8f11-e2fe24513448fileName">%2Fapi%2Fv2%2FAuth%2FloginVerification</con:setting></con:settings>
+      <con:parameters/>
+      <con:method name="POST" id="d122e346-d088-4b63-a5db-73e773245d2f" method="POST">
+        <con:description>To Authenticate Valid User
+Authentication</con:description>
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>X-CSRF-Token</con:name>
+            <con:style>HEADER</con:style>
+            <con:description>This is a requried Header , To validate csrf attacks</con:description>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>x-app-version</con:name>
+            <con:style>HEADER</con:style>
+            <con:description>This is a requried Header, to add value in appversion</con:description>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>Content-Type</con:name>
+            <con:value/>
+            <con:style>HEADER</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>Origin</con:name>
+            <con:value/>
+            <con:style>HEADER</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>Cookie</con:name>
+            <con:value/>
+            <con:style>HEADER</con:style>
+            <con:default/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+          <con:sampleContent>{
+  "username" : "string"
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="a71ed6f2-f70b-43aa-99c3-d853b3cb8402" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://serviceuattest.albertinvent.com</con:endpoint>
+          <con:request>{\r
+  "username" : "string"\r
+}</con:request>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="x-app-version" value="13"/>
+            <con:entry key="Content-Type" value="application/json"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>X-CSRF-Token</con:entry>
+            <con:entry>x-app-version</con:entry>
+            <con:entry>Content-Type</con:entry>
+            <con:entry>Origin</con:entry>
+            <con:entry>Cookie</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>

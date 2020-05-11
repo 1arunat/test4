@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d702f139-214a-40db-8f69-70640196cc45" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase_saveInventoryTransfer" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d702f139-214a-40db-8f69-70640196cc45fileName">TestCase_saveInventoryTransfer</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST Request" id="0e350170-a4b6-4252-8ae1-6e201af3b656"><con:settings/><con:config service="Version 2.0" resourcePath="/api/v2/Rawmaterial/saveInventoryTransfer" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="1040b202-bc53-4d3e-9252-ba53ad85bad7" mediaType="application/json" postQueryString="false">
+          <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+          <con:endpoint>https://localhost:1337</con:endpoint>
+          <con:request> {
+     "inventoryQtySelect": "unit",
+     "inventoryType": "1",
+     "inventoryValueId": "17549",
+     "lotNumberId": "104583",
+     "inventoryOnHand": "500.45351473922904",
+     "inventoryLocationId": "5047",
+     "currentLocationId": "2",
+     "currentSubLocationsMasterId": "8",
+     "inventoryTransferValue": "10.0",
+     "inventoryNotes": "test",
+     "locationId": "1",
+     "transferToSubLocationsMasterId": "2",
+     "kgInventoryTransferValue": "10.0"
+     }</con:request>
+          <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Rawmaterial/saveInventoryTransfer</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="06946cac-8853-4043-847b-55b3469eae53" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="a0d7b83b-a07b-4575-8530-ac6748bb4b5b" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters><con:entry key="Cookie" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/><con:entry key="Authorization" value="Bearer ${#[TestSuite#TestCase_verifyToken#REST Request]#Response#$['result']['loginToken']}"/><con:entry key="origin" value="https://serviceuattest.albertinvent.com"/><con:entry key="X-CSRF-Token" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/><con:entry key="x-app-version" value="13"/></con:parameters>
+          <con:parameterOrder><con:entry>token</con:entry><con:entry>X-CSRF-Token</con:entry><con:entry>Authorization</con:entry><con:entry>origin</con:entry><con:entry>x-app-version</con:entry><con:entry>Cookie</con:entry></con:parameterOrder><con:environmentSpec>
+            <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

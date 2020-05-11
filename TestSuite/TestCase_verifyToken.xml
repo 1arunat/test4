@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f575a155-dd49-4dc2-916a-fb5eb8de094f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase_verifyToken" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="f575a155-dd49-4dc2-916a-fb5eb8de094ffileName">TestCase_verifyToken</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="2b40dd4c-9a41-4210-9e17-0c85cea65fc0" disabled="true">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep/>
+          <targetStep/>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="ab81a051-a8c1-402a-b33d-176b380473a5">
+        <con:settings/>
+        <con:config service="Version 2.0" resourcePath="/api/v2/Users/verifyToken" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="3898198f-29e7-4cea-8fa7-780d1d1c889a" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://serviceuattest.albertinvent.com</con:endpoint>
+            <con:request>{\r
+  "userId" : ${#[TestSuite#TestCase_loginVerification#REST Request]#Response#$['userId']},\r
+  
+  "googleAuthToken" :"010380"\r
+}</con:request>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Users/verifyToken</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="cf070f7a-86ef-43d4-98ba-00c8eb00c6f1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="8264f68e-fe72-4252-ba41-82f26b272949" name="Response SLA">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Existence Match" id="80cf630a-4790-4a14-8c7b-4ae30500aa81" name="Check for login token">
+              <con:configuration>
+                <path>$['result']['loginToken']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="50b61551-ebe5-4dd0-afde-e974c5496199" name="Check for the username">
+              <con:configuration>
+                <token>${#[TestSuite#TestCase_loginVerification#REST Request]#Request#$['username']}</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="Cookie" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/>
+              <con:entry key="Authorization" value="Bearer ${#[TestSuite#TestCase_loginVerification#REST Request]#Response#$['token']}"/>
+              <con:entry key="origin" value="https://serviceuattest.albertinvent.com"/>
+              <con:entry key="X-CSRF-Token" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/>
+              <con:entry key="x-app-version" value="13"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>token</con:entry>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>origin</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Cookie</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>

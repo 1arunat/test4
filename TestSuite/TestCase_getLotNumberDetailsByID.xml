@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a576f32f-546c-4558-9bf1-6ce7ca6b11e6" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase_getLotNumberDetailsByID" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="a576f32f-546c-4558-9bf1-6ce7ca6b11e6fileName">TestCase_getLotNumberDetailsByID</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="DataSource" id="9f1bc330-ec56-4f01-b056-9033cdd2f24d">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration><check>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">true&lt;/con:entry></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">4828</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">104452</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>lotlocationId</con:property>
+          <con:property>lotNumberId</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="abbcc407-d875-4e24-afde-3255c7526127">
+        <con:settings/>
+        <con:config service="Version 2.0" resourcePath="/api/v2/Inventory/getLotNumberDetailsById" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="a8784d1c-2ca8-438c-9735-8f52bdd83854" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request>{\r
+  "lotlocationId" : ${DataSource#lotlocationId},\r
+  "lotNumberId" : ${DataSource#lotNumberId}
+}</con:request>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Inventory/getLotNumberDetailsById</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="69ddd1c0-59b1-457b-9b89-743e1226990a" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="8e02effd-735a-4aa2-98ed-b4de977f1f5a" name="Response SLA">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Existence Match" id="c5e3e2b5-ee05-4d93-acfd-e3ccfd9996a9" name="Check for inventory access">
+              <con:configuration>
+                <path>$['inventoryAccess']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#[TestSuite#TestCase_verifyToken#REST Request]#Response#$['result']['loginToken']}"/>
+              <con:entry key="Cookie" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/>
+              <con:entry key="origin" value="https://serviceuattest.albertinvent.com"/>
+              <con:entry key="X-CSRF-Token" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/>
+              <con:entry key="x-app-version" value="13"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>token</con:entry>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>Authorization</con:entry>
+              <con:entry>origin</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Cookie</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="842b011f-b6db-4741-bcbe-466547ba7bac">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>REST Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>9f1bc330-ec56-4f01-b056-9033cdd2f24d</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>

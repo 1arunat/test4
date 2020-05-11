@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="931def46-409f-4ed5-aed7-54cc7d4ace62" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase_getLotnumberlocation" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="931def46-409f-4ed5-aed7-54cc7d4ace62fileName">TestCase_getLotnumberlocation</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="DataSource" id="29fd1c60-a520-4711-9f12-767084ae02ec">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">entity.parse.failed</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">test</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">test</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">entity.parse.failed</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">$%^&amp;*(</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">@#$%^&amp;&amp;</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">entity.parse.failed</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">test@123</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">entity.parse.failed</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">test@123</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">entity.parse.failed</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">000098</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">entity.parse.failed</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">0</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Try after some time</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">      </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">      </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">-676787678987678989898</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">-78</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">HTTP/1.1 200 OK </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">uuuuuuuuuuuuuuuuuuuuuuuhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjnnnnnnnnnnnnn</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">entity.parse.failed</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">0000078</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">entity.parse.failed</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">"test"</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">"test"</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Try after some time</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">""</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">""</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Try after some time</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>lotNumberId</con:property>
+          <con:property>inventorytype</con:property>
+          <con:property>type</con:property><con:property>error_msg</con:property><con:property>resp</con:property><con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="9b79b111-1ed8-4f0c-bd12-d12e6e6adcc7">
+        <con:settings/>
+        <con:config service="Version 2.0" resourcePath="/api/v2/Location/getLotnumberLocations" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="31f38732-62c4-4be9-b740-37443bd58993" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request>{\r
+  "lotNumberId" : ${DataSource#lotNumberId},\r
+  "inventoryType" : ${DataSource#inventorytype}
+
+}</con:request>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Location/getLotnumberLocations</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="66bdc90a-55e0-42cf-906f-a3a3285604fb" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration><codes>500</codes></con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="a314dfa1-28b3-462b-bfd6-9191f0bacf2b" name="Response SLA" disabled="true">
+              <con:configuration><SLA>1000</SLA></con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="a1e6acca-95d1-400f-bcd6-d71156406ab1" name="Check for status 500"><con:configuration><scriptText>def type_DS = context.expand( '${DataSource#type}' )
+log.info type_DS
+def type_response = context.expand( '${REST Request#Response#$[\'type\']}' )
+log.info type_response
+
+assert(type_DS==type_response)
+
+def status_harResponse = context.expand( '${REST Request#HarResponse#$[\'status\']}' )
+log.info status_harResponse</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="21eb204a-7224-4c4f-977f-79fcec52d7f6" name="Check for the status 400"><con:configuration><scriptText>def error_msg_DS = context.expand( '${DataSource#error_msg}' )
+log.info error_msg_DS
+def error_msg_response = context.expand( '${REST Request#Response#$[\'error_msg\']}' )
+log.info error_msg_response
+assert (error_msg_DS==error_msg_response)
+
+def status_harResponse = context.expand( '${REST Request#HarResponse#$[\'status\']}' )
+log.info status_harResponse</scriptText></con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters><con:entry key="Authorization" value="Bearer ${#[TestSuite_Negativeflow#TestCase_verifyToken#REST Request]#Response#$['result']['loginToken']}"/><con:entry key="Cookie" value="${#[TestSuite_Negativeflow#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/><con:entry key="origin" value="https://serviceuattest.albertinvent.com"/><con:entry key="X-CSRF-Token" value="${#[TestSuite_Negativeflow#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/><con:entry key="x-app-version" value="${#[TestSuite_Negativeflow#TestCase_getAppVersion#GET appVersion]#Response#$['appVersion']}"/></con:parameters>
+            <con:parameterOrder>
+              <con:entry>token</con:entry>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>Authorization</con:entry>
+              <con:entry>origin</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Cookie</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="7415b7f7-dd52-4c1e-ba73-6fc31dec6ac9">
+        <con:settings/>
+        <con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>REST Request</targetStep><discardResults>true</discardResults></con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>5ea39be1-a6d9-46f9-94b8-7fc58fcb2f47</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>

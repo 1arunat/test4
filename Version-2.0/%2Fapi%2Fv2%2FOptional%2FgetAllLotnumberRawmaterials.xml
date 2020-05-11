@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/api/v2/Optional/getAllLotnumberRawmaterials" path="/api/v2/Optional/getAllLotnumberRawmaterials" id="972d2f50-9aa8-46f4-a763-02ff6804e477" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="972d2f50-9aa8-46f4-a763-02ff6804e477fileName">%2Fapi%2Fv2%2FOptional%2FgetAllLotnumberRawmaterials</con:setting></con:settings>
+      <con:parameters/>
+      <con:method name="POST" id="184bef2c-35a6-49f7-b4eb-2eeb8fda1a02" method="POST">
+        <con:description>To Get All Lot Numbers
+getAllLotnumberRawmaterials</con:description>
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>token</con:name>
+            <con:style>HEADER</con:style>
+            <con:description>Incase we want to send header information along our request</con:description>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>X-CSRF-Token</con:name>
+            <con:style>HEADER</con:style>
+            <con:description>This is a requried Header, To validate csrf attacks</con:description>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>Authorization</con:name>
+            <con:style>HEADER</con:style>
+            <con:description>This is a requried Header, Format is `Bearer Token`</con:description>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>origin</con:name>
+            <con:style>HEADER</con:style>
+            <con:description>This is a requried Header, to application host</con:description>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>x-app-version</con:name>
+            <con:style>HEADER</con:style>
+            <con:description>This is a requried Header, to add value in appversion</con:description>
+          </con:parameter>
+        <con:parameter required="true"><con:name>Cookie</con:name><con:value/><con:style>HEADER</con:style><con:default/></con:parameter></con:parameters>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+          <con:sampleContent>{
+  "searchText" : "string",
+  "limit" : "string",
+  "start" : "string",
+  "statusId" : "string",
+  "hideLoader" : "string",
+  "userType" : "string"
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="93f26a3f-f7ac-42f1-a41f-43b9f00be197" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:endpoint>https://localhost:1337</con:endpoint>
+          <con:request>{\r
+  "searchText" : "string",\r
+  "limit" : "string",\r
+  "start" : "string",\r
+  "statusId" : "string",\r
+  "hideLoader" : "string",\r
+  "userType" : "string"\r
+}</con:request>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+          <con:parameterOrder><con:entry>token</con:entry><con:entry>X-CSRF-Token</con:entry><con:entry>Authorization</con:entry><con:entry>origin</con:entry><con:entry>x-app-version</con:entry><con:entry>Cookie</con:entry></con:parameterOrder><con:environmentSpec>
+            <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>

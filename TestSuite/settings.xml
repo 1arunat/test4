@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="099aa3c7-c70e-4273-9253-826344280d72" name="TestSuite" xmlns:con="http://eviware.com/soapui/config">
+    <con:settings><con:setting id="099aa3c7-c70e-4273-9253-826344280d72fileName">TestSuite</con:setting></con:settings>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <con:properties>
+      <con:property>
+        <con:name>Origin</con:name>
+        <con:value>https://serviceuattest.albertinvent.com</con:value>
+      </con:property>
+      <con:property>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+      </con:property>
+    </con:properties>
+    <con:reportParameters/>
+    <con:environmentSpec>
+      <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:testSuite>

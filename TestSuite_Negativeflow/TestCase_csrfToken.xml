@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d1be1e13-3ec1-41b6-9866-35b1bc48f2f9" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase_csrfToken" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="d1be1e13-3ec1-41b6-9866-35b1bc48f2f9fileName">TestCase_csrfToken</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      
+      
+      <con:testStep type="restrequest" name="REST Request" id="dbce4122-3fca-4c5a-b077-464b8bef90b4"><con:settings/><con:config service="Version 2.0" resourcePath="/api/v2/csrfToken" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="05141c94-7a94-41d6-8067-f97a154c5197" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://serviceuattest.albertinvent.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/csrfToken</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="4dfd9bf5-85c3-479f-9db6-157b1e1a3d89" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="78f2c0ff-a34a-44f8-ab03-af3a179195e5" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+          <con:parameterOrder/>
+          <con:environmentSpec>
+            <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:restRequest></con:config></con:testStep><con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>d91c49bd-e838-4403-a12a-c47636d0d5b8</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>76fb9a82-d023-4386-bcf7-d0fc5b651655</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>

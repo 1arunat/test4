@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8539bc2a-c6f2-42c1-a781-7520dbbdda63" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase_rawmaterial_details" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="8539bc2a-c6f2-42c1-a781-7520dbbdda63fileName">TestCase_rawmaterial_details</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="DataSource" id="7f34af76-a239-47ce-8fda-f3a7e53072a8">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration><check>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">true&lt;/con:entry></check><row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">${#[TestSuite#TestCase_getInventoryAll#REST Request]#Response#$['data']['data'][5]['inventoryValueId']}&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>inventoryValueId</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="0f90fa81-d1ee-438a-bebe-7bb97c69f9e6">
+        <con:settings/>
+        <con:config service="Version 2.0" resourcePath="/api/v2/Inventory/getRawMaterialDetails" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="9cbccdd3-a75b-4424-b6d1-b802b28cfabb" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request>{\r
+  "inventoryValueId" : ${DataSource#inventoryValueId}
+}</con:request>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Inventory/getRawMaterialDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="a04569bd-eab9-4664-aafc-bf176344dbb9" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="a77208ae-c3ca-4c71-ad8c-1f2b59fb4ac5" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="3a710664-6848-4c91-9217-5c827e99928a" name="Not Contains">
+              <con:configuration>
+                <token>entity.parse.failed</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="db54e44f-44e5-430a-9bb4-f3fad58a3cd5" name="Check for InventoryValueId not null"><con:configuration><scriptText>def inventory_value_id_resp = context.expand( '${REST Request#Response#$[1][\'inventoryValueId\']}' )
+log.info inventory_value_id_resp
+//assert (log.info(inventory_value_id_resp!= null)) ,'"pass"'
+assert  (inventory_value_id_resp!= null)</scriptText></con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="Cookie" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/>
+              <con:entry key="Authorization" value="Bearer ${#[TestSuite#TestCase_verifyToken#REST Request]#Response#$['result']['loginToken']}"/>
+              <con:entry key="origin" value="https://serviceuattest.albertinvent.com"/>
+              <con:entry key="X-CSRF-Token" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/>
+              <con:entry key="x-app-version" value="13"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>token</con:entry>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>Authorization</con:entry>
+              <con:entry>origin</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Cookie</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="06a36f9a-c22c-4e67-9240-110f4621e7de">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>REST Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>7f34af76-a239-47ce-8fda-f3a7e53072a8</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>0f90fa81-d1ee-438a-bebe-7bb97c69f9e6</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>06a36f9a-c22c-4e67-9240-110f4621e7de</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>

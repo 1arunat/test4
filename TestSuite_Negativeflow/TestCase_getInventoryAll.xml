@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="63bc70a0-099a-4a2e-95b8-c4ae8d7626be" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase_getInventoryAll" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="63bc70a0-099a-4a2e-95b8-c4ae8d7626befileName">TestCase_getInventoryAll</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="DataSource" id="753f017f-680d-4507-b198-25458b5eab25">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">inventoryValueId DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">${#[TestSuite#TestCase_getInventoryDetails#REST Request]#Response#$['result']['inventoryList'][1]['inventoryId']}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">100</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">inventoryValueId DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">inventoryValueId DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">inventoryValueId DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">${#[TestSuite#TestCase_getInventoryDetails#REST Request]#Response#$['result']['inventoryList'][0]['inventoryId']}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">inventoryValueId DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">${#[TestSuite_Negativeflow#TestCase_getInventoryDetails#REST Request]#Response#$['result']['inventoryList'][1]['inventoryId']}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">200</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">inventoryValueId DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">${#[TestSuite_Negativeflow#TestCase_getInventoryDetails#REST Request]#Response#$['result']['inventoryList'][1]['inventoryId']}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Limit</con:property>
+          <con:property>Skip</con:property>
+          <con:property>Sort</con:property>
+          <con:property>InventoryId</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="cf542684-820c-49c4-9517-7862432b096b">
+        <con:settings/>
+        <con:config service="Version 2.0" methodName="POST" resourcePath="/api/v2/Inventory/getInventoryAll" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="00c8b313-146b-48b2-80dc-2bd8ed1c9d71" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request>{
+  "limit" : ${DataSource#Limit},
+  "skip" : ${DataSource#Skip},
+  "sort" : "${DataSource#Sort}",
+  "inventoryId" : ${DataSource#InventoryId},
+  "checkRawmaterialIds" : ""
+}</con:request>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Inventory/getInventoryAll</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="0aa75d48-cfae-464d-8ff8-aaeb12c1df76" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="5b998bb9-8670-4b1c-bcd3-c15b3250fda6" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="c6bfc3b1-b088-4c02-a116-3adb6c21729e" name="Contains">
+              <con:configuration>
+                <token>Formula</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Existence Match" id="d382f928-40d0-40f9-8f56-8d98d388c797" name="JSONPath Existence Match">
+              <con:configuration>
+                <path>$['data']['count']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters><con:entry key="Cookie" value="${#[TestSuite_Negativeflow#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/><con:entry key="Authorization" value="Bearer ${#[TestSuite_Negativeflow#TestCase_verifyToken#REST Request]#Response#$['result']['loginToken']}"/><con:entry key="origin" value="https://serviceuattest.albertinvent.com"/><con:entry key="X-CSRF-Token" value="${#[TestSuite_Negativeflow#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/><con:entry key="x-app-version" value="${#[TestSuite_Negativeflow#TestCase_getAppVersion#GET appVersion]#Response#$['appVersion']}"/></con:parameters>
+            <con:parameterOrder>
+              <con:entry>token</con:entry>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>Authorization</con:entry>
+              <con:entry>origin</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Cookie</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="ce6d9e5e-3915-48fa-accf-aad0dca5df26">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>REST Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>129d7a7f-1250-4f3e-9d94-73cfe2a56362</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>3b397e80-4e1a-45d2-90a1-77f5bcb8ee69</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c51d25cf-bf53-43e7-9576-03a7319f9213</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>

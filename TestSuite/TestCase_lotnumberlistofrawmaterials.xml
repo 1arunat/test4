@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="6f6a0523-e1cb-467d-b52b-f384fb7c209b" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase_lotnumberlistofrawmaterials" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="6f6a0523-e1cb-467d-b52b-f384fb7c209bfileName">TestCase_lotnumberlistofrawmaterials</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST Request" id="b4d14054-0044-4d18-b9a2-faf7a4ce1e4e"><con:settings/><con:config service="Version 2.0" resourcePath="/api/v2/Rawmaterial/getLotNumberListOfRawmaterial" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="727cea0a-795d-4100-86fb-111efce6a38c" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:endpoint>https://localhost:1337</con:endpoint>
+          <con:request>{\r
+  "0" : "string"\r
+}</con:request>
+          <con:assertion type="Valid HTTP Status Codes" id="7cd310ac-3b7e-47f6-a761-fc0924eb8442" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d35c892a-a1a3-43cb-8952-cbc75640960f" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+          <con:environmentSpec>
+            <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

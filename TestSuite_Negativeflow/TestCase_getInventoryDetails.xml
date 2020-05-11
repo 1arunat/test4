@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="fe08cd67-3a94-4eaf-b444-f6de53c6b9d2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase_getInventoryDetails" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="fe08cd67-3a94-4eaf-b444-f6de53c6b9d2fileName">TestCase_getInventoryDetails</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      
+      <con:testStep type="restrequest" name="REST Request" id="a6c492e9-9deb-48e3-8499-404366314f8a">
+        <con:settings/>
+        <con:config service="Version 2.0" resourcePath="/api/v2/Inventory/getInventoryDetails" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="83bdaf5d-6b2d-4da9-b47a-a594ab257188" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Inventory/getInventoryDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="daa0aeb5-f8ba-4716-a66a-359d62df7878" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="2bed0d0e-fe30-45b5-b4a7-aff9edb94a07" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="8533606c-f0f8-4f47-9d83-374d8e2e234b" name="Check for InventoryId '1' (Raw Materials)">
+              <con:configuration>
+                <path>$['result']['inventoryList'][0]['inventoryId']</path>
+                <content>1</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="2e31f8c4-154f-48a6-97dc-c9f4aafb7fe2" name="Check for inventoryId '2'">
+              <con:configuration>
+                <path>$['result']['inventoryList'][1]['inventoryId']</path>
+                <content>2</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="ccf2920c-7fa2-45de-986a-6d6f9353023c" name="Check for inventoryId '3'">
+              <con:configuration>
+                <path>$['result']['inventoryList'][2]['inventoryId']</path>
+                <content>3</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="a9276a4c-1b3e-4875-a86d-2cd7af459f56" name="Check for inventoryId '4'">
+              <con:configuration>
+                <path>$['result']['inventoryList'][3]['inventoryId']</path>
+                <content>4</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters><con:entry key="Authorization" value="Bearer ${#[TestSuite_Negativeflow#TestCase_verifyToken#REST Request]#Response#$['result']['loginToken']}"/><con:entry key="Cookie" value="${#[TestSuite_Negativeflow#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/><con:entry key="origin" value="https://serviceuattest.albertinvent.com"/><con:entry key="X-CSRF-Token" value="${#[TestSuite_Negativeflow#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/><con:entry key="x-app-version" value="${#[TestSuite_Negativeflow#TestCase_getAppVersion#GET appVersion]#Response#$['appVersion']}"/></con:parameters>
+            <con:parameterOrder>
+              <con:entry>token</con:entry>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>Authorization</con:entry>
+              <con:entry>origin</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Cookie</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep><con:properties/>
+      <con:reportParameters/>
+    </con:testCase>

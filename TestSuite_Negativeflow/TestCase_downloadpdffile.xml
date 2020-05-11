@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a1fecace-54ac-4180-834f-b6d821a95008" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase_downloadpdffile" searchProperties="true" timeout="0" disabled="true" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="a1fecace-54ac-4180-834f-b6d821a95008fileName">TestCase_downloadpdffile</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="REST Request" id="61f87099-5745-4e08-b480-62e523fe62ad">
+        <con:settings/>
+        <con:config service="Version 2.0" resourcePath="/api/v2/Rawmaterial/downloadPdfFile" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="09293432-4c3d-4b0e-83b5-f788d13fbc80" mediaType="application/json" postQueryString="false">
+            <con:settings/>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request>{\r
+  "0" : "string"\r
+}</con:request>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Rawmaterial/downloadPdfFile</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="c959e287-ab47-47fd-b878-e36dfee3c208" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="db9be7da-c3b4-4f76-b4ae-efdbc00d36c4" name="Response SLA">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:environmentSpec>
+              <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>

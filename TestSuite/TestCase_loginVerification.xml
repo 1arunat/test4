@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d422e1a6-e98d-4ec0-9548-50a654f8cf40" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase_loginVerification" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings>
+        <con:setting id="com.smartbear.ready.history.view.ClientResultsView$OptionsForm@disable_log">false</con:setting>
+        <con:setting id="com.smartbear.ready.history.view.ClientResultsView$OptionsForm@errors_only">false</con:setting>
+        <con:setting id="com.smartbear.ready.history.view.ClientResultsView$OptionsForm@follow">false</con:setting>
+      <con:setting id="d422e1a6-e98d-4ec0-9548-50a654f8cf40fileName">TestCase_loginVerification</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="DataSource" id="ca67dafd-1a1f-41c2-91de-99a633623620">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration><check>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">true&lt;/con:entry></check><row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">aruna@yopmail.com&lt;/con:entry></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>username</con:property>
+          
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="c52eca0d-a111-48e7-a976-982da2b8b30e">
+        <con:settings/>
+        <con:config service="Version 2.0" methodName="POST" resourcePath="/api/v2/Auth/loginVerification" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="a60c84d5-4dec-4f90-ad35-f6948c1fa6ad" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request>{
+  "username": "${DataSource#username}"
+}</con:request>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Auth/loginVerification</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="06214344-4bf6-48c5-9696-00e27ae0404c" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="db84c2f3-2973-4af1-a9f8-4585880abdbb" name="Response SLA" disabled="true">
+              <con:configuration><SLA>800</SLA></con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="402dcd68-a026-4ca8-8872-3fd6c8969d05" name="check for the email exist">
+              <con:configuration>
+                <token>${REST Request#Response#$['email']}</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Existence Match" id="94ddc1eb-2c0c-473c-b401-70ce94af8004" name="check token node">
+              <con:configuration>
+                <path>$['token']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="b325471d-5244-4109-95f4-ecb75bb00711" name="check usertypeID">
+              <con:configuration>
+                <token>1</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="cac06979-2154-43be-89c0-2dd40ae874d9" name="check notnull for userid,usertypeid,firstname">
+              <con:configuration>
+                <scriptText>def response_userid = context.expand( '${REST Request#Response#$[\'userId\']}' )
+log.info response_userid
+def response_firstname = context.expand( '${REST Request#Response#$[\'firstName\']}' )
+log.info response_firstname
+def response_useridype = context.expand( '${REST Request#Response#$[\'userTypeId\']}' )
+log.info response_useridype
+
+//checking  the usertypeid contains 1
+if ((response_useridype) == "1")
+log.info true
+else
+log.info false
+
+//checking the firstname is not equals to null
+if (( response_firstname) != null)
+log.info true
+else
+log.info false
+
+
+//checking the userid is not equals to null
+if (( response_userid) != null)
+log.info true
+else
+log.info false</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters><con:entry key="Cookie" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/><con:entry key="Origin" value="https://serviceuattest.albertinvent.com"/><con:entry key="X-CSRF-Token" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/><con:entry key="x-app-version" value="13"/><con:entry key="Content-Type" value="application/json"/></con:parameters>
+            <con:parameterOrder>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Content-Type</con:entry>
+              <con:entry>Origin</con:entry>
+              <con:entry>Cookie</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="34181842-fbbd-4624-bad9-86225fbf61d3">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>REST Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>ca67dafd-1a1f-41c2-91de-99a633623620</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c52eca0d-a111-48e7-a976-982da2b8b30e</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>34181842-fbbd-4624-bad9-86225fbf61d3</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>

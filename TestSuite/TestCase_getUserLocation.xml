@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="42b12a78-7900-4d2a-813a-708588528f13" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase_getUserLocation" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="42b12a78-7900-4d2a-813a-708588528f13fileName">TestCase_getUserLocation</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="REST Request" id="bc45d13d-21f4-4783-807c-fb297addb821">
+        <con:settings/>
+        <con:config service="Version 2.0" resourcePath="/api/v2/Users/getUserLocation" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="7789ce34-1864-47b7-8ce0-1a243dab0abb" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Users/getUserLocation</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ebb856b1-7088-4a1c-8b0f-f7ff2798bcc0" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="13193933-dba4-4e43-a231-8633b112c0ed" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="78d16892-a20a-4127-9922-c969559b3f15" name="Check for response"><con:configuration><token>result</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f2baf61f-4067-4480-99fd-be25afd8dd36" name="Check for userlocationid is exist"><con:configuration><scriptText>def userlocationid = context.expand( '${REST Request#Response#$[\'result\'][0][\'userLocationId\']}' )
+log.info userlocationid
+assert (userlocationid !=null)</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="acb6e528-eb5c-421b-ace7-a2e43606c76c" name="Check for locationid is exist"><con:configuration><scriptText>def locationid = context.expand( '${REST Request#Response#$[\'result\'][0][\'locationId\'][\'locationId\']}' )
+log.info locationid
+assert (locationid !=null)</scriptText></con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#[TestSuite#TestCase_verifyToken#REST Request]#Response#$['result']['loginToken']}"/>
+              <con:entry key="Cookie" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#HarResponse#$['headers'][12]['value']}"/>
+              <con:entry key="origin" value="https://serviceuattest.albertinvent.com"/>
+              <con:entry key="X-CSRF-Token" value="${#[TestSuite#TestCase_csrfToken#REST Request 2]#Response#$['_csrf']}"/>
+              <con:entry key="x-app-version" value="13"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>token</con:entry>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>Authorization</con:entry>
+              <con:entry>origin</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Cookie</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="dbdfffe8-ed12-4227-a588-edce6db7565c">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>

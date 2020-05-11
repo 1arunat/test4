@@ -1,0 +1,7879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="097dd945-b75c-4240-b319-628e7e3459c4" name="Version 2.0" type="rest_ex" wadlVersion="https://swagger.io/swagger2/specification" definitionUrl="https://serviceuattest.albertinvent.com/Swagger/json" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+    <con:description>This will contains version 2.0 APIs</con:description>
+    <con:settings><con:setting id="097dd945-b75c-4240-b319-628e7e3459c4fileName">Version-2.0</con:setting></con:settings>
+    <con:definitionCache type="TEXT" rootPart="https://serviceuattest.albertinvent.com/Swagger/json">
+      <con:part>
+        <con:url>https://serviceuattest.albertinvent.com/Swagger/json</con:url>
+        <con:content>{
+  "swagger": "2.0",
+  "info": {
+    "title": "Version 2.0",
+    "description": "This will contains version 2.0 APIs",
+    "termsOfService": "None",
+    "contact": {
+      "name": "Nick",
+      "url": "None",
+      "email": "nick@yopmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "2.0.0"
+  },
+  "host": "localhost:1337",
+  "basePath": "/Swagger/doc",
+  "externalDocs": {
+    "url": "http://theophilus.ziippii.com"
+  },
+  "tags": [
+    {
+      "name": "APIList"
+    },
+    {
+      "name": "Activitylog"
+    },
+    {
+      "name": "AlbertIDH"
+    },
+    {
+      "name": "AlbertKeys"
+    },
+    {
+      "name": "AlbertUnitType"
+    },
+    {
+      "name": "AlbertUnits"
+    },
+    {
+      "name": "ApiLog"
+    },
+    {
+      "name": "ApiPageAccess"
+    },
+    {
+      "name": "AppFunctionality"
+    },
+    {
+      "name": "AppFunctionalityName"
+    },
+    {
+      "name": "AppVersion"
+    },
+    {
+      "name": "AppVersionMobileAndroid"
+    },
+    {
+      "name": "AppVersionMobileIOS"
+    },
+    {
+      "name": "ApprovedCasHazard"
+    },
+    {
+      "name": "BatchSOP"
+    },
+    {
+      "name": "BatchSOPOperatingCondition"
+    },
+    {
+      "name": "BatchWorkflow"
+    },
+    {
+      "name": "BatchWorkflowInventory"
+    },
+    {
+      "name": "BatchWorkflowSOP"
+    },
+    {
+      "name": "BatchWorkflowSOPOpc"
+    },
+    {
+      "name": "BuildUpdate"
+    },
+    {
+      "name": "Cas"
+    },
+    {
+      "name": "CasCategory"
+    },
+    {
+      "name": "CasHazard"
+    },
+    {
+      "name": "CasHazardSymbol"
+    },
+    {
+      "name": "CasListData"
+    },
+    {
+      "name": "CasListName"
+    },
+    {
+      "name": "CasListSource"
+    },
+    {
+      "name": "CoaProperty"
+    },
+    {
+      "name": "Color"
+    },
+    {
+      "name": "Company"
+    },
+    {
+      "name": "DefaultLabelTemplates"
+    },
+    {
+      "name": "ErrorLog"
+    },
+    {
+      "name": "ErrorLogType"
+    },
+    {
+      "name": "ErrorLogUnique"
+    },
+    {
+      "name": "ExportedTemplateDocument"
+    },
+    {
+      "name": "HazardPhrase"
+    },
+    {
+      "name": "HazardPhraseTranslation"
+    },
+    {
+      "name": "Inventory"
+    },
+    {
+      "name": "InventoryAdjustments"
+    },
+    {
+      "name": "InventoryCAS"
+    },
+    {
+      "name": "InventoryLotNumber"
+    },
+    {
+      "name": "InventoryLotNumberInventoryHistory"
+    },
+    {
+      "name": "InventoryLotNumberLocation"
+    },
+    {
+      "name": "InventoryProperty"
+    },
+    {
+      "name": "InventoryPropertyLotNumber"
+    },
+    {
+      "name": "InventoryPropertyOperatingCondition"
+    },
+    {
+      "name": "InventoryPropertyProcedure"
+    },
+    {
+      "name": "InventorySDS"
+    },
+    {
+      "name": "InventoryValue"
+    },
+    {
+      "name": "InventoryValueAlbertIDH"
+    },
+    {
+      "name": "InventoryValueCompatibility"
+    },
+    {
+      "name": "InventoryValueManufacturer"
+    },
+    {
+      "name": "InventoryValueMaterialCompatibility"
+    },
+    {
+      "name": "InventoryValueNotes"
+    },
+    {
+      "name": "InventoryValueNotesDocument"
+    },
+    {
+      "name": "InventoryValueTags"
+    },
+    {
+      "name": "InventoryValueVendor"
+    },
+    {
+      "name": "InventoryVendor"
+    },
+    {
+      "name": "InventoryVendorContainer"
+    },
+    {
+      "name": "InventoryVendorPricing"
+    },
+    {
+      "name": "LabBatch"
+    },
+    {
+      "name": "LabBatchFormulaValue"
+    },
+    {
+      "name": "LabBatchFormulaValueLotNumber"
+    },
+    {
+      "name": "LabBatchLotNumber"
+    },
+    {
+      "name": "LabBatchLotNumberInventoryHistory"
+    },
+    {
+      "name": "LabBatchLotNumberLocation"
+    },
+    {
+      "name": "LabBatchSample"
+    },
+    {
+      "name": "LabBatchTaskNotes"
+    },
+    {
+      "name": "LabBatchTaskNotesDocument"
+    },
+    {
+      "name": "LabBatchTaskOperatingCondition"
+    },
+    {
+      "name": "LabBatchTaskProcedure"
+    },
+    {
+      "name": "Language"
+    },
+    {
+      "name": "Location"
+    },
+    {
+      "name": "ManualFormulaTemplateFields"
+    },
+    {
+      "name": "ManualTemplateFields"
+    },
+    {
+      "name": "OperatingCondition"
+    },
+    {
+      "name": "PPhrase"
+    },
+    {
+      "name": "PPhraseDisposal"
+    },
+    {
+      "name": "PPhrasePrevention"
+    },
+    {
+      "name": "PPhraseResponse"
+    },
+    {
+      "name": "PPhraseStorage"
+    },
+    {
+      "name": "PPhraseTranslation"
+    },
+    {
+      "name": "Page"
+    },
+    {
+      "name": "ParentColorFormula"
+    },
+    {
+      "name": "PhaseColorValue"
+    },
+    {
+      "name": "PhaseProperty"
+    },
+    {
+      "name": "PhasePropertyOperatingCondition"
+    },
+    {
+      "name": "PhasePropertyProcedure"
+    },
+    {
+      "name": "PhaseSummary"
+    },
+    {
+      "name": "PhaseSummaryFile"
+    },
+    {
+      "name": "Procedure"
+    },
+    {
+      "name": "ProcedureOperatingCondition"
+    },
+    {
+      "name": "Project"
+    },
+    {
+      "name": "ProjectColor"
+    },
+    {
+      "name": "ProjectColorFormula"
+    },
+    {
+      "name": "ProjectColorFormulaValue"
+    },
+    {
+      "name": "ProjectColorRawmaterial"
+    },
+    {
+      "name": "ProjectInventory"
+    },
+    {
+      "name": "ProjectInventoryValue"
+    },
+    {
+      "name": "ProjectLocations"
+    },
+    {
+      "name": "ProjectNotes"
+    },
+    {
+      "name": "ProjectNotesDocument"
+    },
+    {
+      "name": "ProjectTask"
+    },
+    {
+      "name": "ProjectTaskNotes"
+    },
+    {
+      "name": "ProjectTaskNotesDocument"
+    },
+    {
+      "name": "Property"
+    },
+    {
+      "name": "PropertyDataColumn"
+    },
+    {
+      "name": "PropertyDataReport"
+    },
+    {
+      "name": "PropertyDataReportExportDocument"
+    },
+    {
+      "name": "PropertyDataReportInventory"
+    },
+    {
+      "name": "PropertyDataReportInventoryCAS"
+    },
+    {
+      "name": "PropertyDataReportProject"
+    },
+    {
+      "name": "PropertyDataReportPropertyOPC"
+    },
+    {
+      "name": "PropertyDataReportPropertySOP"
+    },
+    {
+      "name": "PropertyMethod"
+    },
+    {
+      "name": "PropertyMethodProcedure"
+    },
+    {
+      "name": "PropertyTask"
+    },
+    {
+      "name": "PropertyTaskBatchDetails"
+    },
+    {
+      "name": "PropertyTaskData"
+    },
+    {
+      "name": "PropertyTaskNotes"
+    },
+    {
+      "name": "PropertyTaskNotesDocument"
+    },
+    {
+      "name": "PropertyTaskOperatingCondition"
+    },
+    {
+      "name": "PropertyTaskProcedure"
+    },
+    {
+      "name": "PropertyWorkflowSOPOpc"
+    },
+    {
+      "name": "RawmaterialCasHazard"
+    },
+    {
+      "name": "SDSReportRanges"
+    },
+    {
+      "name": "SkuItem"
+    },
+    {
+      "name": "SkuManualFieldsValue"
+    },
+    {
+      "name": "SkuOperations"
+    },
+    {
+      "name": "SkuOperationsFormulaLotNumber"
+    },
+    {
+      "name": "SkuOperationsProcessInstruction"
+    },
+    {
+      "name": "SkuOperationsSplInstructionvalue"
+    },
+    {
+      "name": "SkuOperationsVersions"
+    },
+    {
+      "name": "SkuProperty"
+    },
+    {
+      "name": "SkuWorkflowOperatingCondition"
+    },
+    {
+      "name": "SkuWorkflowProcedure"
+    },
+    {
+      "name": "SpecialInstructions"
+    },
+    {
+      "name": "Status"
+    },
+    {
+      "name": "SubLocations"
+    },
+    {
+      "name": "SubLocationsMaster"
+    },
+    {
+      "name": "Symbol"
+    },
+    {
+      "name": "Tags"
+    },
+    {
+      "name": "Technology"
+    },
+    {
+      "name": "Template"
+    },
+    {
+      "name": "TemplateDynamicField"
+    },
+    {
+      "name": "TemplateDynamicFieldGroup"
+    },
+    {
+      "name": "TemplateTypes"
+    },
+    {
+      "name": "ThirdPartyIntegration"
+    },
+    {
+      "name": "UserActivities"
+    },
+    {
+      "name": "UserLocation"
+    },
+    {
+      "name": "UserLoginLog"
+    },
+    {
+      "name": "UserPage"
+    },
+    {
+      "name": "UserProject"
+    },
+    {
+      "name": "UserTemplate"
+    },
+    {
+      "name": "UserType"
+    },
+    {
+      "name": "Users"
+    }
+  ],
+  "definitions": {
+    "apilist": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "apiListId": {
+          "type": "string"
+        },
+        "apiName": {
+          "type": "string"
+        },
+        "apiDetails": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "activitylog": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "activitylogId": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "api": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "oldValue": {
+          "type": "string"
+        },
+        "newValue": {
+          "type": "string"
+        },
+        "tableName": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "apiLogId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        }
+      }
+    },
+    "albertidh": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "albertIDHId": {
+          "type": "string"
+        },
+        "idhName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "albertkeys": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "albertKeyId": {
+          "type": "string"
+        },
+        "keyName": {
+          "type": "string"
+        },
+        "keyValue": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "albertunittype": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "albertUnitTypeId": {
+          "type": "string"
+        },
+        "albertUnitTypeName": {
+          "type": "string"
+        }
+      }
+    },
+    "albertunits": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "albertUnitsId": {
+          "type": "string"
+        },
+        "unitName": {
+          "type": "string"
+        },
+        "unitId": {
+          "type": "string"
+        },
+        "albertUnitTypeId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "apilog": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "apiLogId": {
+          "type": "string"
+        },
+        "apiName": {
+          "type": "string"
+        },
+        "apiExecution": {
+          "type": "string"
+        },
+        "apiExecutionUnit": {
+          "type": "string"
+        },
+        "apiStatusCode": {
+          "type": "string"
+        },
+        "apiRequestData": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        }
+      }
+    },
+    "apipageaccess": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "apiPageAccessId": {
+          "type": "string"
+        },
+        "pageId": {
+          "type": "string"
+        },
+        "apiListId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "appfunctionality": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "appFunctionalityId": {
+          "type": "string"
+        },
+        "appFunctionalityNameId": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "appfunctionalityname": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "appFunctionalityNameId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "appversion": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "appVersionId": {
+          "type": "string"
+        },
+        "releaseId": {
+          "type": "string"
+        },
+        "releaseDescription": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        }
+      }
+    },
+    "appversionmobileandroid": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "appVersionMobileAndroidId": {
+          "type": "string"
+        },
+        "appVersionMobileAndroidVersionId": {
+          "type": "string"
+        },
+        "appVersionMobileAndroidBuildNumber": {
+          "type": "string"
+        },
+        "releaseDescription": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        }
+      }
+    },
+    "appversionmobileios": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "appVersionMobileIOSId": {
+          "type": "string"
+        },
+        "appVersionMobileIOSVersionId": {
+          "type": "string"
+        },
+        "appVersionMobileIOSBuildNumber": {
+          "type": "string"
+        },
+        "releaseDescription": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        }
+      }
+    },
+    "approvedcashazard": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "approvedCasHazardId": {
+          "type": "string"
+        },
+        "casId": {
+          "type": "string"
+        },
+        "casHazardId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "batchsop": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "batchSOPId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "templateId": {
+          "type": "string"
+        },
+        "isLocked": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "batchSOPOperatingConditions": {
+          "type": "string"
+        }
+      }
+    },
+    "batchsopoperatingcondition": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "batchSOPOperatingConditionId": {
+          "type": "string"
+        },
+        "batchSOPId": {
+          "type": "string"
+        },
+        "operatingConditionId": {
+          "type": "string"
+        },
+        "opcValue": {
+          "type": "string"
+        },
+        "opcUnit": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "customOpcAliasName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "batchworkflow": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "batchWorkflowId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "WorkflowSOPs": {
+          "type": "string"
+        }
+      }
+    },
+    "batchworkflowinventory": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "batchWorkflowInventoryId": {
+          "type": "string"
+        },
+        "labBatchTaskId": {
+          "type": "string"
+        },
+        "labBatchLotNumberId": {
+          "type": "string"
+        },
+        "inventoryLotNumberLocationId": {
+          "type": "string"
+        },
+        "labBatchLotNumberLocationId": {
+          "type": "string"
+        },
+        "inventoryUsed": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "batchworkflowsop": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "batchWorkflowSOPId": {
+          "type": "string"
+        },
+        "batchWorkflowId": {
+          "type": "string"
+        },
+        "batchSOPId": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "batchworkflowsopopc": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "batchWorkflowSOPOpcId": {
+          "type": "string"
+        },
+        "batchWorkflowSOPId": {
+          "type": "string"
+        },
+        "batchSOPOperatingConditionId": {
+          "type": "string"
+        },
+        "overRidedOpcValue": {
+          "type": "string"
+        },
+        "overRidedOpcUnit": {
+          "type": "string"
+        },
+        "overRidedInventoryValueId": {
+          "type": "string"
+        },
+        "overRidedCustomOpcAliasName": {
+          "type": "string"
+        },
+        "isOpcValueOverRided": {
+          "type": "boolean"
+        },
+        "isOpcUnitOverRided": {
+          "type": "boolean"
+        },
+        "isInventoryValueIdOverRided": {
+          "type": "boolean"
+        },
+        "isCustomOpcAliasNameOverRided": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "buildupdate": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "buildUpdatedId": {
+          "type": "string"
+        },
+        "buildUpdatedTime": {
+          "type": "string"
+        }
+      }
+    },
+    "cas": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "casId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "casNotes": {
+          "type": "string"
+        },
+        "casCategoryId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "isLocked": {
+          "type": "string"
+        },
+        "casSmiles": {
+          "type": "string"
+        },
+        "casSmilesCasListDataId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "cascategory": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "casCategoryId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "isCategoryDisabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "cashazard": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "casHazardId": {
+          "type": "string"
+        },
+        "casHazardStatement": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "compartment": {
+          "type": "string"
+        },
+        "chapterReference": {
+          "type": "string"
+        },
+        "hazardClass": {
+          "type": "string"
+        },
+        "subClass": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "signalWord": {
+          "type": "string"
+        },
+        "hazardStatementCode": {
+          "type": "string"
+        },
+        "hazardStatement": {
+          "type": "string"
+        },
+        "unCutoff": {
+          "type": "string"
+        },
+        "unCutoffNotes": {
+          "type": "string"
+        },
+        "ecCutoff": {
+          "type": "string"
+        },
+        "ecCutoffNotes": {
+          "type": "string"
+        },
+        "ecAnnexReportRangeType": {
+          "type": "string"
+        },
+        "hazardGroup": {
+          "type": "string"
+        },
+        "hazardPriority": {
+          "type": "string"
+        },
+        "isImported": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "cashazardsymbol": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "casHazardSymbolId": {
+          "type": "string"
+        },
+        "casHazardId": {
+          "type": "string"
+        },
+        "symbolId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "caslistdata": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "casListDataId": {
+          "type": "string"
+        },
+        "casId": {
+          "type": "string"
+        },
+        "casListNameId": {
+          "type": "string"
+        },
+        "casListSourceId": {
+          "type": "string"
+        },
+        "casListData": {
+          "type": "string"
+        },
+        "casListSourceExdbId": {
+          "type": "string"
+        },
+        "Notes": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "caslistname": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "casListNameId": {
+          "type": "string"
+        },
+        "listName": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "listNameType": {
+          "type": "string"
+        }
+      }
+    },
+    "caslistsource": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "casListSourceId": {
+          "type": "string"
+        },
+        "listSource": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "listSourceType": {
+          "type": "string"
+        },
+        "friendlyName": {
+          "type": "string"
+        }
+      }
+    },
+    "coaproperty": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "coaPropertyId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "color": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "colorId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "code": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "colorCode": {
+          "type": "string",
+          "maxLength": 3
+        },
+        "colorName": {
+          "type": "string",
+          "maxLength": 25
+        },
+        "colorSource": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "company": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "defaultlabeltemplates": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "defaultLabelTemplatesId": {
+          "type": "string"
+        },
+        "templateTypesId": {
+          "type": "string"
+        },
+        "templateId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "errorlog": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "errorLogId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "api": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "description": {
+          "type": "string"
+        },
+        "errorLogUniqueId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "errorlogtype": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "errorLogTypeId": {
+          "type": "string"
+        },
+        "errorLogTypeName": {
+          "type": "string"
+        },
+        "errorLogTypePriority": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "errorlogunique": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "errorLogUniqueId": {
+          "type": "string"
+        },
+        "firstErrorLogId": {
+          "type": "string"
+        },
+        "errorLogTypeId": {
+          "type": "string"
+        },
+        "ptStoryId": {
+          "type": "string"
+        },
+        "ptStoryStatusId": {
+          "type": "string"
+        },
+        "totalErrorCount": {
+          "type": "string"
+        },
+        "totalErrorUsersCount": {
+          "type": "string"
+        },
+        "firstErrorDate": {
+          "type": "string"
+        },
+        "mostRecentErrorDate": {
+          "type": "string"
+        },
+        "ptIgnoreNotRealError": {
+          "type": "string"
+        },
+        "ptIgnoreOldError": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "exportedtemplatedocument": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "exportedTemplateDocumentId": {
+          "type": "string"
+        },
+        "templateId": {
+          "type": "string"
+        },
+        "documentName": {
+          "type": "string"
+        },
+        "documentType": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "batchId": {
+          "type": "string"
+        },
+        "inventoryLotNumberId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "hazardphrase": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "hazardPhraseId": {
+          "type": "string"
+        },
+        "hazardPhraseName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "phraseTranslation": {
+          "type": "string"
+        }
+      }
+    },
+    "hazardphrasetranslation": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "hazardPhraseTranslationId": {
+          "type": "string"
+        },
+        "hazardPhraseId": {
+          "type": "string"
+        },
+        "languageId": {
+          "type": "string"
+        },
+        "phrase": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventory": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "inventoryPrefix": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "consumeInventoryDuringBatch": {
+          "type": "string"
+        },
+        "isVisibility": {
+          "type": "string"
+        },
+        "isAccounting": {
+          "type": "string"
+        },
+        "revenueAccount": {
+          "type": "string"
+        },
+        "costOfGoodSoldAccount": {
+          "type": "string"
+        },
+        "inventoryAssetAccount": {
+          "type": "string"
+        },
+        "inventory_values": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryadjustments": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryAdjustmentsId": {
+          "type": "string"
+        },
+        "inventoryLotNumberLocationId": {
+          "type": "string"
+        },
+        "labBatchLotNumberLocationId": {
+          "type": "string"
+        },
+        "inventoryAdjustmentValue": {
+          "type": "string"
+        },
+        "zeroInventory": {
+          "type": "string"
+        },
+        "invoiceNo": {
+          "type": "string"
+        },
+        "createdDate": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 500
+        }
+      }
+    },
+    "inventorycas": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryCASId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "casId": {
+          "type": "string"
+        },
+        "caspercentage": {
+          "type": "string"
+        },
+        "caspercentageMin": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventorylotnumber": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryLotNumberId": {
+          "type": "string"
+        },
+        "inventoryVendorLotNumber": {
+          "type": "string"
+        },
+        "numberOfLabels": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "pricing": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "isQuarantine": {
+          "type": "string"
+        },
+        "isManuallyQuarantined": {
+          "type": "boolean"
+        },
+        "assetTag": {
+          "type": "string"
+        }
+      }
+    },
+    "inventorylotnumberinventoryhistory": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryLotNumberInventoryHistoryId": {
+          "type": "string"
+        },
+        "inventoryLotNumberLocationId": {
+          "type": "string"
+        },
+        "startingInventory": {
+          "type": "string"
+        },
+        "endingInventory": {
+          "type": "string"
+        },
+        "inventoryNotes": {
+          "type": "string"
+        },
+        "inventoryType": {
+          "type": "string"
+        },
+        "invoiceNo": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventorylotnumberlocation": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryLotNumberLocationId": {
+          "type": "string"
+        },
+        "inventoryLotNumberId": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "subLocationsId": {
+          "type": "string"
+        },
+        "bmSync": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "expiryDate": {
+          "type": "string"
+        },
+        "initialQuantity": {
+          "type": "string"
+        },
+        "inventoryOnHand": {
+          "type": "string"
+        },
+        "zeroInventory": {
+          "type": "string"
+        },
+        "inventoryNotes": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "initialGrossWeight": {
+          "type": "string"
+        },
+        "inventoryVendorContainerId": {
+          "type": "string"
+        },
+        "containerTareWeight": {
+          "type": "string"
+        },
+        "initialQuantityDate": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryproperty": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryPropertyId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "coaPropertyId": {
+          "type": "string"
+        },
+        "propertyId": {
+          "type": "string"
+        },
+        "propertyMethodId": {
+          "type": "string"
+        },
+        "isRequired": {
+          "type": "boolean"
+        },
+        "friendlyName": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventorypropertylotnumber": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryPropertyLotNumberId": {
+          "type": "string"
+        },
+        "inventoryPropertyId": {
+          "type": "string"
+        },
+        "inventoryLotNumberId": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventorypropertyoperatingcondition": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryPropertyOperatingConditionId": {
+          "type": "string"
+        },
+        "inventoryPropertyProcedureId": {
+          "type": "string"
+        },
+        "operatingConditionId": {
+          "type": "string"
+        },
+        "opcValue": {
+          "type": "string"
+        },
+        "opcUnit": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "intervalOrder": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventorypropertyprocedure": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryPropertyProcedureId": {
+          "type": "string"
+        },
+        "inventoryPropertyId": {
+          "type": "string"
+        },
+        "proceduresId": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "inventoryPropertyProcedures": {
+          "type": "string"
+        }
+      }
+    },
+    "inventorysds": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueDocumentId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "originalName": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "fileSize": {
+          "type": "string"
+        },
+        "fileDate": {
+          "type": "string"
+        },
+        "unNumber": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvalue": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "inventoryId": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "manufacturerProductCode": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "inventoryAvailable": {
+          "type": "string"
+        },
+        "inventoryInUse": {
+          "type": "string"
+        },
+        "inventoryOnHand": {
+          "type": "string"
+        },
+        "minimumOrderQuantity": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "isApproved": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "albertId": {
+          "type": "string"
+        },
+        "rsnNumber": {
+          "type": "string"
+        },
+        "inventoryTrackingKg": {
+          "type": "string"
+        },
+        "color_rawmaterial": {
+          "type": "string"
+        },
+        "inventoryCAS": {
+          "type": "string"
+        },
+        "inventorySDS": {
+          "type": "string"
+        },
+        "inventoryTags": {
+          "type": "string"
+        },
+        "inventoryIDHs": {
+          "type": "string"
+        },
+        "vendor_rawmaterial": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvaluealbertidh": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueAlbertIDHId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "albertIDHId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvaluecompatibility": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueCompatibilityId": {
+          "type": "string"
+        },
+        "inventoryValueIdTwo": {
+          "type": "string"
+        },
+        "inventoryValueIdOne": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "compatibilityType": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvaluemanufacturer": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueManufacturerId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvaluematerialcompatibility": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueMaterialCompatibilityId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "compatibilityInventoryValueId": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "compatibilityType": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvaluenotes": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueNotesId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "notesDescription": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "notes_document": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvaluenotesdocument": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueNotesDocumentId": {
+          "type": "string"
+        },
+        "inventoryValueNotesId": {
+          "type": "string"
+        },
+        "originalFileName": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "isPresentS3Bucket": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvaluetags": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueTagsId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "tagsId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvaluevendor": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryValueVendorId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvendor": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryVendorId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvendorcontainer": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryVendorContainerId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "tareWeight": {
+          "type": "string"
+        },
+        "tareImageName": {
+          "type": "string"
+        },
+        "tareS3ImageName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "inventoryvendorpricing": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inventoryVendorPricingId": {
+          "type": "string"
+        },
+        "inventoryVendorId": {
+          "type": "string"
+        },
+        "inventoryVendorContainerId": {
+          "type": "string"
+        },
+        "pricing": {
+          "type": "string"
+        },
+        "FOB": {
+          "type": "string"
+        },
+        "expDate": {
+          "type": "string"
+        },
+        "leadTime": {
+          "type": "string"
+        },
+        "leadTimeUnit": {
+          "type": "string"
+        },
+        "isCostingUsed": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatch": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchId": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "claimDate": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "restartDate": {
+          "type": "string"
+        },
+        "dueDate": {
+          "type": "string"
+        },
+        "closeDate": {
+          "type": "string"
+        },
+        "closedBy": {
+          "type": "string"
+        },
+        "completedDate": {
+          "type": "string"
+        },
+        "nextActivityDate": {
+          "type": "string"
+        },
+        "batchSize": {
+          "type": "string"
+        },
+        "batchUnit": {
+          "type": "string"
+        },
+        "priorityId": {
+          "type": "string"
+        },
+        "taskownerId": {
+          "type": "string"
+        },
+        "taskStatus": {
+          "type": "string"
+        },
+        "taskCreatorNotes": {
+          "type": "string"
+        },
+        "taskOwnerNotes": {
+          "type": "string"
+        },
+        "hexColorCode": {
+          "type": "string",
+          "maxLength": 10
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "parentLabBatchId": {
+          "type": "string"
+        },
+        "orderNumber": {
+          "type": "string"
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "lotTracking": {
+          "type": "string"
+        },
+        "enforceOrderOfAddition": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "batchWorkflowId": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchformulavalue": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchFormulaValueId": {
+          "type": "string"
+        },
+        "labBatchSampleId": {
+          "type": "string"
+        },
+        "projectColorFormulaValueId": {
+          "type": "string"
+        },
+        "batchValue": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "approval_required": {
+          "type": "string"
+        },
+        "searchRawmaterialApproval": {
+          "type": "string"
+        },
+        "orderOfAddition": {
+          "type": "string"
+        },
+        "specialInstructionsId": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchformulavaluelotnumber": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchFormulaValueLotNumberId": {
+          "type": "string"
+        },
+        "labBatchFormulaValueId": {
+          "type": "string"
+        },
+        "inventoryLotNumberLocationId": {
+          "type": "string"
+        },
+        "labBatchLotNumberLocationId": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchlotnumber": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchLotNumberId": {
+          "type": "string"
+        },
+        "labBatchSampleId": {
+          "type": "string"
+        },
+        "labBatchLotNumberVisibleId": {
+          "type": "string"
+        },
+        "rawCost": {
+          "type": "string"
+        },
+        "COGs": {
+          "type": "string"
+        },
+        "manualCOGs": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "labBatchLotNumberLocation": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchlotnumberinventoryhistory": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchLotNumberInventoryHistoryId": {
+          "type": "string"
+        },
+        "labBatchLotNumberLocationId": {
+          "type": "string"
+        },
+        "startingInventory": {
+          "type": "string"
+        },
+        "endingInventory": {
+          "type": "string"
+        },
+        "inventoryNotes": {
+          "type": "string"
+        },
+        "inventoryType": {
+          "type": "string"
+        },
+        "invoiceNo": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchlotnumberlocation": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchLotNumberLocationId": {
+          "type": "string"
+        },
+        "labBatchLotNumberId": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "initialQuantity": {
+          "type": "string"
+        },
+        "inventoryOnHand": {
+          "type": "string"
+        },
+        "zeroInventory": {
+          "type": "string"
+        },
+        "inventoryNotes": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "expiryDate": {
+          "type": "string"
+        },
+        "initialGrossWeight": {
+          "type": "string"
+        },
+        "containerTareWeight": {
+          "type": "string"
+        },
+        "initialQuantityDate": {
+          "type": "string"
+        },
+        "inventoryVendorContainerId": {
+          "type": "string"
+        },
+        "formulaLotNumber": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchsample": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchSampleId": {
+          "type": "string"
+        },
+        "labBatchId": {
+          "type": "string"
+        },
+        "labBatchFormulaId": {
+          "type": "string"
+        },
+        "labBatchLotNumber": {
+          "type": "string"
+        },
+        "approval_required": {
+          "type": "string"
+        },
+        "skuOperationsVersionsId": {
+          "type": "string"
+        },
+        "skuBatchSize": {
+          "type": "string"
+        },
+        "skuBatchUnit": {
+          "type": "string"
+        },
+        "batchYieldValue": {
+          "type": "string"
+        },
+        "skuTaskCreatorNotes": {
+          "type": "string"
+        },
+        "skuTaskOwnerNotes": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchtasknotes": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchTaskNotesId": {
+          "type": "string"
+        },
+        "labBatchTaskId": {
+          "type": "string"
+        },
+        "notesDescription": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "taskNotesDocuments": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchtasknotesdocument": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchTaskNotesDocumentId": {
+          "type": "string"
+        },
+        "labBatchTaskNotesId": {
+          "type": "string"
+        },
+        "originalFileName": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchtaskoperatingcondition": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchTaskOperatingConditionId": {
+          "type": "string"
+        },
+        "labBatchTaskProcedureId": {
+          "type": "string"
+        },
+        "batchSOPOperatingConditionId": {
+          "type": "string"
+        },
+        "operatingConditionId": {
+          "type": "string"
+        },
+        "opcValue": {
+          "type": "string"
+        },
+        "opcUnit": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "customOpcAliasName": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "manualOpcValue": {
+          "type": "string"
+        },
+        "manualOpcUnit": {
+          "type": "string"
+        },
+        "manualInventoryValueId": {
+          "type": "string"
+        },
+        "skuWorkflowProcedureId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "labbatchtaskprocedure": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labBatchTaskProcedureId": {
+          "type": "string"
+        },
+        "labBatchTaskId": {
+          "type": "string"
+        },
+        "proceduresId": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "approval_required": {
+          "type": "string"
+        },
+        "skuOperationsVersionsId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "formulaTaskProcedures": {
+          "type": "string"
+        }
+      }
+    },
+    "language": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "languageId": {
+          "type": "string"
+        },
+        "languageName": {
+          "type": "string"
+        },
+        "languageCode": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "location": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "subLocations": {
+          "type": "string"
+        },
+        "isSubLocationsMandatory": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "lat": {
+          "type": "string"
+        },
+        "lng": {
+          "type": "string"
+        }
+      }
+    },
+    "manualformulatemplatefields": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "manualFormulaTemplateFieldsId": {
+          "type": "string"
+        },
+        "formulaId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "reportsId": {
+          "type": "string"
+        },
+        "manualTemplateFieldsId": {
+          "type": "string"
+        },
+        "defaultValue": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "manualtemplatefields": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "manualTemplateFieldsId": {
+          "type": "string"
+        },
+        "fieldName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "operatingcondition": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "operatingConditionId": {
+          "type": "string"
+        },
+        "conditionName": {
+          "type": "string"
+        },
+        "inventoryId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "pphrase": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "pPhraseId": {
+          "type": "string"
+        },
+        "pPhraseName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "phraseTranslation": {
+          "type": "string"
+        }
+      }
+    },
+    "pphrasedisposal": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "pPhraseDisposalId": {
+          "type": "string"
+        },
+        "casHazardId": {
+          "type": "string"
+        },
+        "pPhraseId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "pphraseprevention": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "pPhrasePreventionId": {
+          "type": "string"
+        },
+        "casHazardId": {
+          "type": "string"
+        },
+        "pPhraseId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "pphraseresponse": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "pPhraseResponseId": {
+          "type": "string"
+        },
+        "casHazardId": {
+          "type": "string"
+        },
+        "pPhraseId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "pphrasestorage": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "pPhraseStorageId": {
+          "type": "string"
+        },
+        "casHazardId": {
+          "type": "string"
+        },
+        "pPhraseId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "pphrasetranslation": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "pPhraseTranslationId": {
+          "type": "string"
+        },
+        "pPhraseId": {
+          "type": "string"
+        },
+        "languageId": {
+          "type": "string"
+        },
+        "phrase": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "page": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "pageId": {
+          "type": "string"
+        },
+        "pageName": {
+          "type": "string"
+        },
+        "pageState": {
+          "type": "string"
+        },
+        "parentPageId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "page_child": {
+          "type": "string"
+        },
+        "user_pages": {
+          "type": "string"
+        }
+      }
+    },
+    "parentcolorformula": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "parentColorFormulaId": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "parentProjectColorFormulaId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "phasecolorvalue": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "phaseColorValueId": {
+          "type": "string"
+        },
+        "phaseSummaryId": {
+          "type": "string"
+        },
+        "phasePropertyId": {
+          "type": "string"
+        },
+        "projectColorId": {
+          "type": "string"
+        },
+        "goals": {
+          "type": "string"
+        },
+        "results": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "phaseproperty": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "phasePropertyId": {
+          "type": "string"
+        },
+        "propertyMethodId": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "propertyId": {
+          "type": "string"
+        },
+        "isDeleted": {
+          "type": "boolean"
+        },
+        "isHidden": {
+          "type": "boolean"
+        },
+        "friendlyName": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "phasepropertyoperatingcondition": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "phasePropertyOperatingConditionId": {
+          "type": "string"
+        },
+        "phasePropertyProcedureId": {
+          "type": "string"
+        },
+        "procedureOperatingConditionId": {
+          "type": "string"
+        },
+        "operatingConditionId": {
+          "type": "string"
+        },
+        "opcValue": {
+          "type": "string"
+        },
+        "opcUnit": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "intervalOrder": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "phasepropertyprocedure": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "phasePropertyProcedureId": {
+          "type": "string"
+        },
+        "phasePropertyId": {
+          "type": "string"
+        },
+        "proceduresId": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "phasePropertyProcedures": {
+          "type": "string"
+        }
+      }
+    },
+    "phasesummary": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "phaseSummaryId": {
+          "type": "string"
+        },
+        "phaseSummaryName": {
+          "type": "string"
+        },
+        "phaseSummaryStatus": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "inprogressDate": {
+          "type": "string"
+        },
+        "expDate": {
+          "type": "string"
+        },
+        "closedDate": {
+          "type": "string"
+        },
+        "completionDate": {
+          "type": "string"
+        },
+        "statementOfWork": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "phasesummaryfile": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "phaseSummaryFileId": {
+          "type": "string"
+        },
+        "phaseSummaryId": {
+          "type": "string"
+        },
+        "s3Name": {
+          "type": "string"
+        },
+        "originalName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "procedure": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "proceduresId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "templateId": {
+          "type": "string"
+        },
+        "isLocked": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "procedureOperatingConditions": {
+          "type": "string"
+        }
+      }
+    },
+    "procedureoperatingcondition": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "procedureOperatingConditionId": {
+          "type": "string"
+        },
+        "procedureId": {
+          "type": "string"
+        },
+        "operatingConditionId": {
+          "type": "string"
+        },
+        "opcValue": {
+          "type": "string"
+        },
+        "opcUnit": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "customOpcAliasName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "project": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "details": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "moNumber": {
+          "type": "string"
+        },
+        "moNumberIndex": {
+          "type": "string"
+        },
+        "technologyId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "hexColorCode": {
+          "type": "string",
+          "maxLength": 10
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "innovationType": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "project_colors": {
+          "type": "string"
+        },
+        "project_inventory": {
+          "type": "string"
+        },
+        "user_project": {
+          "type": "string"
+        },
+        "project_locations": {
+          "type": "string"
+        }
+      }
+    },
+    "projectcolor": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectColorId": {
+          "type": "string"
+        },
+        "colorId": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "isEditable": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "project_formula": {
+          "type": "string"
+        }
+      }
+    },
+    "projectcolorformula": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "formulaName": {
+          "type": "string"
+        },
+        "formulaCode": {
+          "type": "string"
+        },
+        "projectColorId": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "result": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "isParent": {
+          "type": "string"
+        },
+        "total": {
+          "type": "string"
+        },
+        "isHighLiteRow": {
+          "type": "string"
+        },
+        "isLocked": {
+          "type": "string"
+        },
+        "formulaPricing": {
+          "type": "string"
+        },
+        "hasNoPricing": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "color_rawmaterial_formula": {
+          "type": "string"
+        },
+        "parent_formula": {
+          "type": "string"
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 250
+        }
+      }
+    },
+    "projectcolorformulavalue": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectColorFormulaValueId": {
+          "type": "string"
+        },
+        "projectColorRawmaterialId": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "projectcolorrawmaterial": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectColorRawmaterialId": {
+          "type": "string"
+        },
+        "projectColorId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "specialInstructionsId": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "color_rawmaterial_formula": {
+          "type": "string"
+        }
+      }
+    },
+    "projectinventory": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectInventoryId": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "inventoryId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "project_inventory_value": {
+          "type": "string"
+        }
+      }
+    },
+    "projectinventoryvalue": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectInventoryValueId": {
+          "type": "string"
+        },
+        "projectInventoryId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "projectlocations": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectLocationsId": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "projectnotes": {
+      "properties": {
+        "projectNotesId": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "projectNotesDocuments": {
+          "type": "string"
+        }
+      }
+    },
+    "projectnotesdocument": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectNotesDocumentId": {
+          "type": "string"
+        },
+        "projectNotesId": {
+          "type": "string"
+        },
+        "originalFileName": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "projecttask": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectTaskId": {
+          "type": "string"
+        },
+        "taskname": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "claimDate": {
+          "type": "string"
+        },
+        "dueDate": {
+          "type": "string"
+        },
+        "closeDate": {
+          "type": "string"
+        },
+        "closedBy": {
+          "type": "string"
+        },
+        "completedDate": {
+          "type": "string"
+        },
+        "nextActivityDate": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "restartDate": {
+          "type": "string"
+        },
+        "priorityId": {
+          "type": "string"
+        },
+        "taskownerId": {
+          "type": "string"
+        },
+        "taskStatus": {
+          "type": "string"
+        },
+        "innovatorNotes": {
+          "type": "string"
+        },
+        "ownerNotes": {
+          "type": "string"
+        },
+        "parentProjectTaskId": {
+          "type": "string"
+        },
+        "hexColorCode": {
+          "type": "string",
+          "maxLength": 10
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "projecttasknotes": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectTaskNotesId": {
+          "type": "string"
+        },
+        "projectTaskId": {
+          "type": "string"
+        },
+        "notesDescription": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "taskNotesDocuments": {
+          "type": "string"
+        }
+      }
+    },
+    "projecttasknotesdocument": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "projectTaskNotesDocumentId": {
+          "type": "string"
+        },
+        "projectTaskNotesId": {
+          "type": "string"
+        },
+        "originalFileName": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "property": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyId": {
+          "type": "string"
+        },
+        "propertyName": {
+          "type": "string"
+        },
+        "propertyType": {
+          "type": "string"
+        },
+        "units": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "forumlaTaskApplicability": {
+          "type": "string"
+        },
+        "materialsApplicability": {
+          "type": "string"
+        },
+        "substratesApplicability": {
+          "type": "string"
+        },
+        "lampsApplicability": {
+          "type": "string"
+        },
+        "printersApplicability": {
+          "type": "string"
+        },
+        "printHeadApplicability": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertydatacolumn": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyDataColumnId": {
+          "type": "string"
+        },
+        "propertyId": {
+          "type": "string"
+        },
+        "propertyDataColumnName": {
+          "type": "string"
+        },
+        "propertyDataColumnUnits": {
+          "type": "string"
+        },
+        "exampleCalculationData": {
+          "type": "string"
+        },
+        "calculationLogic": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertydatareport": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyDataReportId": {
+          "type": "string"
+        },
+        "propertyDataReportName": {
+          "type": "string"
+        },
+        "isAllProjects": {
+          "type": "string"
+        },
+        "isAllInventorys": {
+          "type": "string"
+        },
+        "isAllProperties": {
+          "type": "string"
+        },
+        "copyPropertyDataReportIndex": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertydatareportexportdocument": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyDataReportExportDocumentId": {
+          "type": "string"
+        },
+        "propertyDataReportId": {
+          "type": "string"
+        },
+        "propertyDataReportName": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertydatareportinventory": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyDataReportInventoryId": {
+          "type": "string"
+        },
+        "propertyDataReportId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertydatareportinventorycas": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyDataReportInventoryCASId": {
+          "type": "string"
+        },
+        "propertyDataReportId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "casId": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertydatareportproject": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyDataReportProjectId": {
+          "type": "string"
+        },
+        "propertyDataReportId": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertydatareportpropertyopc": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyDataReportPropertiesOPCId": {
+          "type": "string"
+        },
+        "propertyDataReportPropertySOPId": {
+          "type": "string"
+        },
+        "propertyWorkflowSOPOpcId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertydatareportpropertysop": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyDataReportPropertySOPId": {
+          "type": "string"
+        },
+        "propertyDataReportId": {
+          "type": "string"
+        },
+        "propertyMethodProcedureId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "propertyOpc": {
+          "type": "string"
+        }
+      }
+    },
+    "propertymethod": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyMethodId": {
+          "type": "string"
+        },
+        "propertyId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "MethodProcedures": {
+          "type": "string"
+        }
+      }
+    },
+    "propertymethodprocedure": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyMethodProcedureId": {
+          "type": "string"
+        },
+        "propertyMethodId": {
+          "type": "string"
+        },
+        "proceduresId": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertytask": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyTaskId": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "inventoryLotNumberId": {
+          "type": "string"
+        },
+        "propertyTaskType": {
+          "type": "string"
+        },
+        "phasePropertyId": {
+          "type": "string"
+        },
+        "phasePropertyTarget": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "claimDate": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "restartDate": {
+          "type": "string"
+        },
+        "dueDate": {
+          "type": "string"
+        },
+        "closeDate": {
+          "type": "string"
+        },
+        "closedBy": {
+          "type": "string"
+        },
+        "completedDate": {
+          "type": "string"
+        },
+        "nextActivityDate": {
+          "type": "string"
+        },
+        "priorityId": {
+          "type": "string"
+        },
+        "taskownerId": {
+          "type": "string"
+        },
+        "taskStatus": {
+          "type": "string"
+        },
+        "innovatorNotes": {
+          "type": "string"
+        },
+        "ownerNotes": {
+          "type": "string"
+        },
+        "hexColorCode": {
+          "type": "string",
+          "maxLength": 10
+        },
+        "formulaTaskType": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "qcResult": {
+          "type": "string"
+        },
+        "qcResultFlag": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "inventoryPropertyId": {
+          "type": "string"
+        },
+        "qcTasks": {
+          "type": "string"
+        },
+        "isVoidEnabledForCollectionGrid": {
+          "type": "string"
+        }
+      }
+    },
+    "propertytaskbatchdetails": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyTaskBatchDetailsId": {
+          "type": "string"
+        },
+        "propertyTaskId": {
+          "type": "string"
+        },
+        "labBatchLotNumberId": {
+          "type": "string"
+        },
+        "parentLabBatchTaskId": {
+          "type": "string"
+        },
+        "skuOperationsId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertytaskdata": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyTaskDataId": {
+          "type": "string"
+        },
+        "propertyTaskId": {
+          "type": "string"
+        },
+        "propertyDataColumnId": {
+          "type": "string"
+        },
+        "propertyDataPoint": {
+          "type": "string"
+        },
+        "trialNo": {
+          "type": "string"
+        },
+        "propertyTaskOperatingConditionId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertytasknotes": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyTaskNotesId": {
+          "type": "string"
+        },
+        "propertyTaskId": {
+          "type": "string"
+        },
+        "notesDescription": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "taskNotesDocuments": {
+          "type": "string"
+        }
+      }
+    },
+    "propertytasknotesdocument": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyTaskNotesDocumentId": {
+          "type": "string"
+        },
+        "propertyTaskNotesId": {
+          "type": "string"
+        },
+        "originalFileName": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertytaskoperatingcondition": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyTaskOperatingConditionId": {
+          "type": "string"
+        },
+        "propertyTaskProcedureId": {
+          "type": "string"
+        },
+        "procedureOperatingConditionId": {
+          "type": "string"
+        },
+        "operatingConditionId": {
+          "type": "string"
+        },
+        "opcValue": {
+          "type": "string"
+        },
+        "opcUnit": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "manualOpcValue": {
+          "type": "string"
+        },
+        "manualOpcUnit": {
+          "type": "string"
+        },
+        "manualInventoryValueId": {
+          "type": "string"
+        },
+        "intervalOrder": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "propertytaskprocedure": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyTaskProcedureId": {
+          "type": "string"
+        },
+        "propertyTaskId": {
+          "type": "string"
+        },
+        "proceduresId": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "approval_required": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "propertyTaskProcedures": {
+          "type": "string"
+        }
+      }
+    },
+    "propertyworkflowsopopc": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyWorkflowSOPOpcId": {
+          "type": "string"
+        },
+        "propertyMethodProcedureId": {
+          "type": "string"
+        },
+        "procedureOperatingConditionId": {
+          "type": "string"
+        },
+        "overRidedOpcValue": {
+          "type": "string"
+        },
+        "overRidedOpcUnit": {
+          "type": "string"
+        },
+        "overRidedInventoryValueId": {
+          "type": "string"
+        },
+        "overRidedCustomOpcAliasName": {
+          "type": "string"
+        },
+        "isOpcValueOverRided": {
+          "type": "boolean"
+        },
+        "isOpcUnitOverRided": {
+          "type": "boolean"
+        },
+        "isInventoryValueIdOverRided": {
+          "type": "boolean"
+        },
+        "isCustomOpcAliasNameOverRided": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "rawmaterialcashazard": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "rawmaterialCasHazardId": {
+          "type": "string"
+        },
+        "casHazardId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "sdsreportranges": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "SDSReportRangesId": {
+          "type": "string"
+        },
+        "rangeType": {
+          "type": "string"
+        },
+        "greaterThanMin": {
+          "type": "string"
+        },
+        "greaterOrEqualToMax": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "skuitem": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuItemId": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "skumanualfieldsvalue": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuManualFieldsValueId": {
+          "type": "string"
+        },
+        "skuOperationsVersionsId": {
+          "type": "string"
+        },
+        "manualTemplateFieldsId": {
+          "type": "string"
+        },
+        "defaultValue": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "skuoperations": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuOperationsId": {
+          "type": "string"
+        },
+        "skuNumber": {
+          "type": "string"
+        },
+        "skuInventoryOnHand": {
+          "type": "string"
+        },
+        "isHidden": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "OperationVersions": {
+          "type": "string"
+        }
+      }
+    },
+    "skuoperationsformulalotnumber": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuOperationsFormulaLotNumberId": {
+          "type": "string"
+        },
+        "skuItemId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "searchRawmaterialApproval": {
+          "type": "string"
+        },
+        "inventoryLotNumberLocationId": {
+          "type": "string"
+        },
+        "labBatchLotNumberLocationId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "skuoperationsprocessinstruction": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuOperationsProcessInstructionId": {
+          "type": "string"
+        },
+        "skuItemId": {
+          "type": "string"
+        },
+        "skuOperationsProcessInstructionDesc": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "skuoperationssplinstructionvalue": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuOperationsSplInstructionValueId": {
+          "type": "string"
+        },
+        "skuOperationsProcessInstructionId": {
+          "type": "string"
+        },
+        "labBatchSampleId": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "skuoperationsversions": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuOperationsVersionsId": {
+          "type": "string"
+        },
+        "skuOperationsId": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "externalVersion": {
+          "type": "string"
+        },
+        "internalVersion": {
+          "type": "string"
+        },
+        "technologyId": {
+          "type": "string"
+        },
+        "skuItemId": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "batchWorkflowId": {
+          "type": "string"
+        },
+        "minimumDeviation": {
+          "type": "string"
+        },
+        "maximumDeviation": {
+          "type": "string"
+        },
+        "shelfLife": {
+          "type": "string"
+        },
+        "minimumStockQuantity": {
+          "type": "string"
+        },
+        "creatorNotes": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "skuProcedures": {
+          "type": "string"
+        },
+        "skuManaulFields": {
+          "type": "string"
+        }
+      }
+    },
+    "skuproperty": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuPropertyId": {
+          "type": "string"
+        },
+        "skuItemId": {
+          "type": "string"
+        },
+        "phasePropertyId": {
+          "type": "string"
+        },
+        "skuTarget": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "skuworkflowoperatingcondition": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuWorkflowOperatingConditionId": {
+          "type": "string"
+        },
+        "skuWorkflowProcedureId": {
+          "type": "string"
+        },
+        "batchSOPOperatingConditionId": {
+          "type": "string"
+        },
+        "operatingConditionId": {
+          "type": "string"
+        },
+        "opcValue": {
+          "type": "string"
+        },
+        "opcUnit": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "skuworkflowprocedure": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "skuWorkflowProcedureId": {
+          "type": "string"
+        },
+        "skuOperationsVersionsId": {
+          "type": "string"
+        },
+        "proceduresId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "skuProceduresOpc": {
+          "type": "string"
+        }
+      }
+    },
+    "specialinstructions": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "specialInstructionsId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "status": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "sublocations": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "subLocationsId": {
+          "type": "string"
+        },
+        "subLocationsMasterId": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "sublocationsmaster": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "subLocationsMasterId": {
+          "type": "string"
+        },
+        "subLocationsMasterName": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "symbol": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "symbolId": {
+          "type": "string"
+        },
+        "symbolCode": {
+          "type": "string"
+        },
+        "symbolName": {
+          "type": "string"
+        },
+        "pictogramWithOutline": {
+          "type": "string"
+        },
+        "pictogramWithNoOutline": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "tags": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "tagsId": {
+          "type": "string"
+        },
+        "tagsName": {
+          "type": "string"
+        },
+        "isConfidentialTag": {
+          "type": "string"
+        },
+        "count": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "technology": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "technologyId": {
+          "type": "string"
+        },
+        "technologyName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "isAccounting": {
+          "type": "string"
+        },
+        "revenueAccount": {
+          "type": "string"
+        },
+        "costOfGoodSoldAccount": {
+          "type": "string"
+        },
+        "inventoryAssetAccount": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "template": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "templateId": {
+          "type": "string"
+        },
+        "templateName": {
+          "type": "string"
+        },
+        "pageWidth": {
+          "type": "string"
+        },
+        "pageHeight": {
+          "type": "string"
+        },
+        "marginTop": {
+          "type": "string"
+        },
+        "marginRight": {
+          "type": "string"
+        },
+        "marginLeft": {
+          "type": "string"
+        },
+        "marginBottom": {
+          "type": "string"
+        },
+        "isHeightLocked": {
+          "type": "string"
+        },
+        "isWidthLocked": {
+          "type": "string"
+        },
+        "isManualFieldsPresent": {
+          "type": "boolean"
+        },
+        "backgroundImageName": {
+          "type": "string"
+        },
+        "s3TemplateName": {
+          "type": "string"
+        },
+        "templateType": {
+          "type": "string"
+        },
+        "isTopics": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "inventoryValueId": {
+          "type": "string"
+        },
+        "inventoryLotId": {
+          "type": "string"
+        },
+        "batchId": {
+          "type": "string"
+        },
+        "propertyTaskId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "skuOperationsVersionsId": {
+          "type": "string"
+        },
+        "copyTemplateIndex": {
+          "type": "string"
+        },
+        "inventoryLocationId": {
+          "type": "string"
+        },
+        "inventorySubLocationId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "templatedynamicfield": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "templateDynamicFieldId": {
+          "type": "string"
+        },
+        "templateDynamicFieldName": {
+          "type": "string"
+        },
+        "languageId": {
+          "type": "string"
+        },
+        "templateDynamicFieldGroupId": {
+          "type": "string"
+        },
+        "sequenceOrder": {
+          "type": "string"
+        },
+        "templateType": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "templatedynamicfieldgroup": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "templateDynamicFieldGroupId": {
+          "type": "string"
+        },
+        "templateDynamicFieldGroupName": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "template_dynamic_fields": {
+          "type": "string"
+        }
+      }
+    },
+    "templatetypes": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "templateTypesId": {
+          "type": "string"
+        },
+        "typeName": {
+          "type": "string"
+        },
+        "typeId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "thirdpartyintegration": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "thirdPartyIntegrationId": {
+          "type": "string"
+        },
+        "thirdPartyName": {
+          "type": "string"
+        },
+        "jsonData": {
+          "type": "string"
+        },
+        "accessToken": {
+          "type": "string"
+        },
+        "refreshToken": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "useractivities": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userActivitiesId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "userlocation": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userLocationId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "sendTaskAccess": {
+          "type": "string"
+        },
+        "viewTaskAccess": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "userloginlog": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userLoginLogId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "ipv4": {
+          "type": "string"
+        },
+        "ipv6": {
+          "type": "string"
+        },
+        "browserName": {
+          "type": "string"
+        },
+        "userLoggedInTime": {
+          "type": "string"
+        },
+        "loginToken": {
+          "type": "string"
+        }
+      }
+    },
+    "userpage": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userPageId": {
+          "type": "string"
+        },
+        "userTypeId": {
+          "type": "string"
+        },
+        "pageId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "userproject": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userProjectId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "projectId": {
+          "type": "string"
+        },
+        "projectColorId": {
+          "type": "string"
+        },
+        "projectColorFormulaId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "usertemplate": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userTemplateId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "templateId": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "usertype": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userTypeId": {
+          "type": "string"
+        },
+        "userType": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      }
+    },
+    "users": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "userTypeId": {
+          "type": "string"
+        },
+        "statusId": {
+          "type": "string"
+        },
+        "isSuperAdmin": {
+          "type": "string"
+        },
+        "isActivated": {
+          "type": "string"
+        },
+        "forgetPassword": {
+          "type": "string"
+        },
+        "lastLoginTime": {
+          "type": "string"
+        },
+        "allProjects": {
+          "type": "string"
+        },
+        "isPasswordNeedRehash": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "user_locations": {
+          "type": "string"
+        },
+        "user_projects": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "string"
+        },
+        "secretKey": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "parameters": {
+    "WhereQueryParam": {
+      "in": "query",
+      "name": "where",
+      "required": false,
+      "type": "string",
+      "description": "This follows the standard from http://sailsjs.com/documentation/reference/blueprint-api/find-where"
+    },
+    "LimitQueryParam": {
+      "in": "query",
+      "name": "limit",
+      "required": false,
+      "type": "integer",
+      "description": "The maximum number of records to send back (useful for pagination). Defaults to undefined"
+    },
+    "SkipQueryParam": {
+      "in": "query",
+      "name": "skip",
+      "required": false,
+      "type": "integer",
+      "description": "The number of records to skip (useful for pagination)."
+    },
+    "SortQueryParam": {
+      "in": "query",
+      "name": "sort",
+      "required": false,
+      "type": "string",
+      "description": "The sort order. By default, returned records are sorted by primary key value in ascending order. e.g. ?sort=lastName%20ASC"
+    },
+    "PopulateQueryParam": {
+      "in": "query",
+      "name": "populate",
+      "required": false,
+      "type": "string",
+      "description": "check for better understanding -> http://sailsjs.com/documentation/reference/blueprint-api/find-where"
+    },
+    "PageQueryParam": {
+      "in": "query",
+      "name": "page",
+      "required": false,
+      "type": "integer",
+      "description": "This helps with pagination and when the limit is known"
+    },
+    "SelectQueryParam": {
+      "in": "query",
+      "name": "select",
+      "required": false,
+      "type": "string",
+      "description": "This helps with what to return for the user and its \",\" delimited"
+    },
+    "TokenHeaderParam": {
+      "in": "header",
+      "name": "token",
+      "required": false,
+      "type": "string",
+      "description": "Incase we want to send header information along our request"
+    },
+    "IDPathParam": {
+      "in": "path",
+      "name": "id",
+      "required": true,
+      "type": "string",
+      "description": "This is to identify a particular object out"
+    },
+    "PerPageQueryParam": {
+      "in": "query",
+      "name": "perPage",
+      "required": false,
+      "type": "integer",
+      "description": "This helps with pagination and when the limit is known for pagify"
+    }
+  },
+  "paths": {
+    "/api/v2/csrfToken": {
+      "get": {
+        "summary": "CSRF-Token",
+        "description": "Cross-site request forgery (CSRF) is a type of attack which forces an end user to execute unwanted actions on a web application backend with which he/she is currently authenticated",
+        "tags": [
+          "Auth"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "Homepage"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Auth/loginVerification": {
+      "post": {
+        "summary": "Authentication",
+        "description": "To Authenticate Valid User",
+        "tags": [
+          "Auth"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header , To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "username": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "username"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Users/getAppVersion": {
+      "get": {
+        "summary": "AppVersion",
+        "description": "To Get App Version",
+        "tags": [
+          "Users"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Users/getUserLocation": {
+      "post": {
+        "summary": "getUserLocation",
+        "description": "To Get User Location",
+        "tags": [
+          "Users"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Users/verifyToken": {
+      "post": {
+        "summary": "verifyToken",
+        "description": "To Verify User Token",
+        "tags": [
+          "Users"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "userId": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "googleAuthToken": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "userId",
+                "googleAuthToken"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Location/getLotnumberLocations": {
+      "post": {
+        "summary": "getLotnumberLocations",
+        "description": "To Get Lot Number Location",
+        "tags": [
+          "Location"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "lotNumberId": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "inventoryType": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "lotNumberId",
+                "inventoryType"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/addInventoryNote": {
+      "post": {
+        "summary": "addInventoryNote",
+        "description": "To add Inventory Note",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "notesDescription": {
+                  "type": "string"
+                },
+                "inventoryValueId": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "notesDescription",
+                "inventoryValueId"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getCasListWithHazardDetails": {
+      "post": {
+        "summary": "getCasListWithHazardDetails",
+        "description": "To Get CasList With HazardDetails",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "inventoryValueId": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "inventoryValueId"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getInventoryAll": {
+      "post": {
+        "summary": "getInventoryAll",
+        "description": "To Get Inventory List",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "limit": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "skip": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "sort": {
+                  "type": "string"
+                },
+                "searchString": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "inventoryId": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "checkRawmaterialIds": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "limit",
+                "skip",
+                "inventoryId"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getInventoryDetails": {
+      "post": {
+        "summary": "getInventoryDetails",
+        "description": "To Get Inventory Details",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getInventorySdsList": {
+      "post": {
+        "summary": "getInventorySdsList",
+        "description": "To Get Inventory SDS List",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "inventoryValueId": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "inventoryValueId"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getPackSizeData": {
+      "post": {
+        "summary": "getPackSizeData",
+        "description": "To Get Inventory Pack Size Data",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "locationId": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "lotNumberId": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "inventoryType": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "currentLocationId": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "currentSubLocationsMasterId": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "locationId",
+                "lotNumberId",
+                "inventoryType"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getLotNumberDetailsById": {
+      "post": {
+        "summary": "getLotNumberDetailsById",
+        "description": "To Get Inventory LotNumber Details",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "lotlocationId": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "lotNumberId": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "lotNumberId"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getRawMaterialLocationLotsList": {
+      "post": {
+        "summary": "getRawMaterialLocationLotsList",
+        "description": "To Get Inventory Raw Material Location List Details",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "inventoryValueId": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "locationId": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "inventoryValueId",
+                "locationId"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getRawMaterialDetails": {
+      "post": {
+        "summary": "getRawMaterialDetails",
+        "description": "To Get Inventory Raw Material Details",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "inventoryValueId": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "inventoryValueId"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getRawMaterialLotsList": {
+      "post": {
+        "summary": "getRawMaterialLotsList",
+        "description": "To Get Inventory Raw Material Details",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "inventoryValueId": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "required": [
+                "inventoryValueId"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/uploadInventoryNoteAttachments": {
+      "post": {
+        "summary": "saveInventoryNote",
+        "description": "To Upload Inventory Note Attachments",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "in": "formData",
+            "name": "originalFileName",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried to file original name "
+          },
+          {
+            "in": "formData",
+            "name": "inventoryValueNotesId",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried formdata "
+          },
+          {
+            "in": "formData",
+            "name": "file",
+            "required": true,
+            "type": "file",
+            "description": "This is a requried Header, to add value in appversion "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Inventory/getInventoryFilterV2": {
+      "post": {
+        "summary": "getInventoryFilterV2",
+        "description": "To Get Inventory Filter V2",
+        "tags": [
+          "Inventory"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "0": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Rawmaterial/downloadPdfFile": {
+      "post": {
+        "summary": "downloadPdfFile",
+        "description": "To Download Pdf File",
+        "tags": [
+          "RawMaterial"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "0": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Rawmaterial/getLotNumberListOfRawmaterial": {
+      "post": {
+        "summary": "getLotnumberListOfRawmaterial",
+        "description": "To get Lot Number List of Raw Material",
+        "tags": [
+          "RawMaterial"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "0": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Rawmaterial/saveInventoryTransfer": {
+      "post": {
+        "summary": "saveInventoryTransfer",
+        "description": "To get saveInventoryTransfer",
+        "tags": [
+          "RawMaterial"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Rawmaterial/getInventoryDetailsOfLotnumber": {
+      "post": {
+        "summary": "getInventoryDetailsOfLotnumber",
+        "description": "To Get Inventory details of Lot Number",
+        "tags": [
+          "RawMaterial"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "locationId": {
+                  "type": "string"
+                },
+                "lotNumberId": {
+                  "type": "string"
+                },
+                "inventoryType": {
+                  "type": "string"
+                },
+                "currentSubLocationsMasterId": {
+                  "type": "string"
+                },
+                "currentLocationId": {
+                  "type": "string"
+                },
+                "projectColorFormulaId": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Rawmaterial/saveInventoryAdjustment": {
+      "post": {
+        "summary": "saveInventoryAdjustment",
+        "description": "To Store Inventory Adjustment details",
+        "tags": [
+          "RawMaterial"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "inventoryQtySelect": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Rawmaterial/uploadPdfFile": {
+      "post": {
+        "summary": "uploadPdfFile",
+        "description": "To Upload Raw Material PDF file",
+        "tags": [
+          "RawMaterial"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "in": "formData",
+            "name": "inventoryValueId",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried to inventoryValueId "
+          },
+          {
+            "in": "formData",
+            "name": "fileDetailsname",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried to fileDetailsname "
+          },
+          {
+            "in": "formData",
+            "name": "fileDetailssize",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried to fileDetailssize "
+          },
+          {
+            "in": "formData",
+            "name": "fileDate",
+            "required": false,
+            "type": "string",
+            "description": "This is  a unNumber "
+          },
+          {
+            "in": "formData",
+            "name": "fileDate",
+            "required": false,
+            "type": "string",
+            "description": "This is  a fileDate "
+          },
+          {
+            "in": "formData",
+            "name": "file",
+            "required": false,
+            "type": "file",
+            "description": "This is a requried Header, to add value in appversion "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Optional/getAllLotnumberRawmaterials": {
+      "post": {
+        "summary": "getAllLotnumberRawmaterials",
+        "description": "To Get All Lot Numbers",
+        "tags": [
+          "Optional"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "searchText": {
+                  "type": "string"
+                },
+                "limit": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "string"
+                },
+                "statusId": {
+                  "type": "string"
+                },
+                "hideLoader": {
+                  "type": "string"
+                },
+                "userType": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/v2/Template/searchRawmaterial": {
+      "post": {
+        "summary": "searchRawmaterial",
+        "description": "To get Search of Raw Material",
+        "tags": [
+          "Template"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          },
+          {
+            "in": "header",
+            "name": "X-CSRF-Token",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, To validate csrf attacks "
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, Format is `Bearer Token` "
+          },
+          {
+            "in": "header",
+            "name": "origin",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to application host "
+          },
+          {
+            "in": "header",
+            "name": "x-app-version",
+            "required": true,
+            "type": "string",
+            "description": "This is a requried Header, to add value in appversion "
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "An object defining our schema for this request",
+            "schema": {
+              "properties": {
+                "0": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/Swagger/json": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "swagger"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/Swagger/swagger-ui.css": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "swagger"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/Swagger/swagger-ui-bundle.js": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "swagger"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/Swagger/swagger-ui-standalone-preset.js": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "swagger"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/Swagger/swagger-script.js": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "swagger"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/Swagger/favicon-16x16.png": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "swagger"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/Swagger/favicon-32x32.png": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "swagger"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/Swagger/doc": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "swagger"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/TokenHeaderParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  }
+}</con:content>
+        <con:type>https://swagger.io/swagger2/specification</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>https://localhost:1337</con:endpoint>
+      <con:endpoint>https://serviceuattest.albertinvent.com</con:endpoint>
+    </con:endpoints>
+    <con:environmentSpec>
+      <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </con:interface>

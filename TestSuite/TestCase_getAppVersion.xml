@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="89348f39-9d65-487d-b335-397ffeab2194" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase_getAppVersion" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="89348f39-9d65-487d-b335-397ffeab2194fileName">TestCase_getAppVersion</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="GET appVersion" id="52c29a00-9aab-4116-9d7c-ac0972de58f7">
+        <con:settings/>
+        <con:config service="Version 2.0" methodName="GET" resourcePath="/api/v2/Users/getAppVersion" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GET appVersion" id="f6015b14-4d87-44f3-a1a8-3ae2df818276" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Users/getAppVersion</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="bec75382-98fd-427d-87e3-b269841db227" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="b73df13a-8e27-4d8d-9aca-1b669b29e058" name="Response SLA">
+              <con:configuration><SLA>300</SLA></con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Existence Match" id="b9d3ed20-05c3-414d-8deb-e8be561e5429" name="check status node is exist">
+              <con:configuration>
+                <path>$['status']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="11b9d5c5-4b09-417c-b086-6bedc8ce47b3" name="Check Appversion">
+              <con:configuration>
+                <token>13</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:environmentSpec>
+              <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="8d95e722-cc8f-4196-9964-32044018df97">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>

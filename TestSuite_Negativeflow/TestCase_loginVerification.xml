@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="aa783d86-9f13-4b05-bd7e-52856b74d13f" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase_loginVerification" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings>
+        <con:setting id="com.smartbear.ready.history.view.ClientResultsView$OptionsForm@disable_log">false</con:setting>
+        <con:setting id="com.smartbear.ready.history.view.ClientResultsView$OptionsForm@errors_only">false</con:setting>
+        <con:setting id="com.smartbear.ready.history.view.ClientResultsView$OptionsForm@follow">false</con:setting>
+      <con:setting id="aa783d86-9f13-4b05-bd7e-52856b74d13ffileName">TestCase_loginVerification</con:setting></con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="DataSource" id="f8677e6b-fc7a-416b-95b2-f207f02cfe92">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">bdeva617@gmail.com</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid email</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">0</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">400</con:entry></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">123456789abcd</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid email</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">0</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">400</con:entry></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">taruna</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid email</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">0</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">400</con:entry></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Email and password doesn't match</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">401</con:entry></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">weweieiuisdjfdsjfidsjfidsjfijdsfjidsfijdsfijsdfjisdfijsdijfsdijfsdijfdsjifsdjifsifsdjif17@il.com</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid email</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">0</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">400</con:entry></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">           </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid email</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">0</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">400</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">il@ga.com</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid email</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">0</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">400</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">aruna@yopmail.com</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>username</con:property>
+          <con:property>errormsg</con:property>
+          <con:property>isAdfsAuthenticationEnabled</con:property><con:property>statuscode</con:property><con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="185e551b-7f30-470f-bd10-50563fdfbccf">
+        <con:settings/>
+        <con:config service="Version 2.0" methodName="POST" resourcePath="/api/v2/Auth/loginVerification" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="a60c84d5-4dec-4f90-ad35-f6948c1fa6ad" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://localhost:1337</con:endpoint>
+            <con:request>{
+  "username": "${DataSource#username}"
+}</con:request>
+            <con:originalUri>https://serviceuattest.albertinvent.com/api/v2/Auth/loginVerification</con:originalUri>
+            
+            <con:assertion type="Response SLA Assertion" id="db84c2f3-2973-4af1-a9f8-4585880abdbb" name="Response SLA" disabled="true">
+              <con:configuration><SLA>800</SLA></con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="402dcd68-a026-4ca8-8872-3fd6c8969d05" name="check for the email exist">
+              <con:configuration>
+                <token>${REST Request#Response#$['email']}</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            
+            
+            
+            <con:assertion type="GroovyScriptAssertion" id="a1750b85-f38a-4cfd-a120-f450c26fd0c5" name="Check for error message"><con:configuration><scriptText>def errormsgDS = context.expand( '${DataSource#errormsg}' )
+log.info errormsgDS
+
+def response = context.expand( '${REST Request#Response#$[\'error_msg\']}' )
+log.info response
+
+
+assert errormsgDS == response
+
+
+
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="cc42d6c0-2d10-48e6-a050-28170ca48a73" name="Check for status code"><con:configuration><scriptText>def statuscode = context.expand( '${DataSource#statuscode}' )
+log.info statuscode
+
+def harResponse = context.expand( '${REST Request#HarResponse#$[\'status\']}' )
+log.info harResponse
+
+assert statuscode == harResponse</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="c07c50f0-296f-4e62-81dd-04f6c4f7a12b" name="isAdfsAuthenticationEnabled"><con:configuration><scriptText>def isAdfsAuthenticationEnabled = context.expand( '${DataSource#isAdfsAuthenticationEnabled}' )
+log.info isAdfsAuthenticationEnabled
+
+def response = context.expand( '${REST Request#Response#$[\'isAdfsAuthenticationEnabled\']}' )
+log.info response
+
+assert isAdfsAuthenticationEnabled == response</scriptText></con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters><con:entry key="Cookie" value="${#[TestSuite_Negativeflow#TestCase_csrfToken#REST Request1]#HarResponse#$['headers'][12]['value']}"/><con:entry key="Origin" value="https://serviceuattest.albertinvent.com"/><con:entry key="X-CSRF-Token" value="${#[TestSuite_Negativeflow#TestCase_csrfToken#REST Request1]#Response#$['_csrf']}"/><con:entry key="x-app-version" value="${#[TestSuite_Negativeflow#TestCase_getAppVersion#GET appVersion]#Response#$['appVersion']}"/><con:entry key="Content-Type" value="application/json"/></con:parameters>
+            <con:parameterOrder>
+              <con:entry>X-CSRF-Token</con:entry>
+              <con:entry>x-app-version</con:entry>
+              <con:entry>Content-Type</con:entry>
+              <con:entry>Origin</con:entry>
+              <con:entry>Cookie</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="e8cb4c36-987a-4ff3-ad2a-3898680653c5">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>REST Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>ca67dafd-1a1f-41c2-91de-99a633623620</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c52eca0d-a111-48e7-a976-982da2b8b30e</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>34181842-fbbd-4624-bad9-86225fbf61d3</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
